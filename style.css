@@ -1,0 +1,192 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #0dc1ee;
+}
+header img {
+  width: 25vw;
+  height: 25vh;
+  margin: 2rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav button {
+  margin: 1rem;
+  font-family: "Acme", sans-serif;
+  font-size: 2rem;
+  color: #0dc1ee;
+  background-color: #ffffff;
+  border: 1px solid #0dc1ee;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0dc1ee;
+  width: 100vw;
+  font-family: "Acme", sans-serif;
+  color: #ffffff;
+  padding: 2rem;
+}
+footer .div-follow h3, footer .div-visit h3 {
+  font-size: 2rem;
+}
+footer .div-follow h4, footer .div-visit h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+#section-paniales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Acme", sans-serif;
+  color: #0dc1ee;
+  display: none;
+}
+#section-paniales h1 {
+  text-align: center;
+  margin: 2.5rem 1.5rem;
+  font-size: 2rem;
+}
+#section-paniales #paniales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#section-paniales #paniales .paniales-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0dc1ee;
+  padding: 1rem;
+  width: 45%;
+  margin: 1rem;
+  border-radius: 10px;
+}
+#section-paniales #paniales .paniales-columns .img-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+}
+#section-paniales #paniales .paniales-columns .img-group img {
+  width: 40%;
+  margin: 1rem;
+}
+#section-paniales #paniales .paniales-columns .img-group img:hover {
+  transform: scale(1.2);
+}
+
+#section-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ace9d9;
+  font-family: "Acme", sans-serif;
+  color: #0dc1ee;
+  font-size: 2rem;
+  padding: 2.5rem;
+}
+
+@media screen and (max-width: 2560px) {
+  nav button {
+    font-size: 2.5rem;
+  }
+
+  #section-paniales h1, h2, footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header img {
+    height: 20vh;
+  }
+
+  footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header img {
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  header img {
+    width: 35vw;
+    height: 13vh;
+  }
+
+  nav {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav button {
+    margin: 1rem;
+  }
+
+  footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a {
+    font-size: 2rem;
+  }
+
+  footer .div-follow h3, footer .div-visit h3 {
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 425px) {
+  header img {
+    height: 13vh;
+    width: 33vw;
+  }
+
+  nav button {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #section-paniales h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a {
+    font-size: 1rem;
+  }
+
+  #section-inicio h1, #section-inicio p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+header{
+    @include flex($direction:row, $content:center);
+    background-color: $colorPrincipal;
+
+    img{
+        width: 25vw;
+        height: 25vh;
+        margin: $espacioL;
+    }
+}

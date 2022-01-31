@@ -1,0 +1,33 @@
+
+
+//typography
+$typography: 'Acme', sans-serif;
+
+// font size
+$sizeS:1rem;
+$sizeM:1.5rem;
+$sizeL:2rem;
+$sizeXL:2.5rem;
+
+//color principal
+$colorPrincipal:#0dc1ee;
+$colorSecundario:#ffffff;
+
+//margin - padding
+$espacioXS:0.5rem;
+$espacioS:1rem;
+$espacioM:1.5rem;
+$espacioL:2rem;
+$espacioXL:2.5rem;
+$espacioXXL:3rem;
+$espacioXXXL:3.5rem;
+$espacioXXXXL:4rem;
+
+//border 
+$borderRadius: 10px;
+@mixin flex($direction, $content){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: center;
+}

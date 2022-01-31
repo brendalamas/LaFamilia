@@ -1,0 +1,23 @@
+footer{
+    @include flex ($direction:row, $content:space-around);
+
+    // background-color: #0dc1ee;
+    background-color: $colorPrincipal;
+    width: 100vw;
+    font-family: $typography;
+    color: $colorSecundario;
+    padding: $espacioL;
+
+    .div-follow , .div-visit {
+        
+        h3{
+            font-size: $sizeL;
+        }
+        h4{
+            font-size: $sizeM;
+            font-weight: 200;
+            margin-top: $espacioS;
+        }
+    }
+        
+}

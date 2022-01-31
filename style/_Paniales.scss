@@ -1,0 +1,39 @@
+#section-paniales{
+    @include flex($direction:column, $content:center);
+    font-family: $typography;
+    color: $colorPrincipal;
+    display: none;
+
+    h1{
+        text-align: center;
+        margin: $espacioXL $espacioM;
+        font-size: $sizeL;
+    }
+    #paniales{
+        @include flex($direction:row, $content:center);
+        flex-wrap: wrap;
+
+        .paniales-columns{
+            @include flex($direction:column, $content:center);
+            border: 1px solid $colorPrincipal;
+            padding: $espacioS;
+            width: 45%;
+            margin: $espacioS;
+            border-radius: $borderRadius;
+            
+            .img-group{
+                @include flex($direction:row, $content:center);
+                flex-wrap: wrap;
+                width: auto;
+
+                img{
+                    width: 40%;
+                    margin: $espacioS;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }       
+    }
+}

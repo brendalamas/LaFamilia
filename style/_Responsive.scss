@@ -1,0 +1,65 @@
+@media screen and (max-width: 2560px) {
+    nav button{
+        font-size: $sizeXL;
+    }
+    #section-paniales h1 , h2, footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a{
+        font-size: $sizeXL;
+    }
+}
+@media screen and (max-width: 1440px) {
+    header img {
+        height: 20vh;
+    }
+    footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a{
+        font-size: 2.3rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    header img {
+        height: 15vh;
+    }
+}
+@media screen and (max-width: 768px){
+    header img{
+        width: 35vw;
+        height: 13vh;
+    }
+    nav{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav button {
+        margin:$espacioS;
+    }
+    footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a{
+        font-size: 2rem;
+    }
+    footer .div-follow h3, footer .div-visit h3{
+        font-weight: 500;
+    }
+}
+@media screen and (max-width:425px){
+    header img {
+        height: 13vh;
+        width: 33vw;
+    }
+    nav button {
+        margin: $espacioXS;
+        font-size: $sizeS;
+    }
+    #section-paniales h1 {
+        font-size: $sizeM;
+        margin: $espacioS;
+    }
+    h2{
+        font-size: $sizeM;
+    }
+    footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a{
+        font-size: $sizeS;
+    }
+    #section-inicio h1, #section-inicio p{
+        font-size: $sizeM;
+        text-align: center;
+    }
+}

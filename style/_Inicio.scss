@@ -1,0 +1,8 @@
+#section-inicio{
+    @include flex ($direction:column, $content:center);
+    background-color: #ace9d9;
+    font-family: $typography;
+    color: $colorPrincipal;
+    font-size: $sizeL;
+    padding: $espacioXL;
+}
