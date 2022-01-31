@@ -1,0 +1,11 @@
+#section-juguetes{
+    @include flex($direction:column, $content:center);
+    font-family: $typography;
+    color: $colorPrincipal;
+    display: none;
+    h1{
+        text-align: center;
+        margin: $espacioXL $espacioM;
+        font-size: $sizeL;
+    }
+}

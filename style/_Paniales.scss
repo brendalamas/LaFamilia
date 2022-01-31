@@ -9,31 +9,32 @@
         margin: $espacioXL $espacioM;
         font-size: $sizeL;
     }
-    #paniales{
-        @include flex($direction:row, $content:center);
-        flex-wrap: wrap;
+    
+}
+.flex-row{
+    @include flex($direction:row, $content:center);
+    flex-wrap: wrap;
 
-        .paniales-columns{
-            @include flex($direction:column, $content:center);
-            border: 1px solid $colorPrincipal;
-            padding: $espacioS;
-            width: 45%;
-            margin: $espacioS;
-            border-radius: $borderRadius;
-            
-            .img-group{
-                @include flex($direction:row, $content:center);
-                flex-wrap: wrap;
-                width: auto;
+    .flex-columns{
+        @include flex($direction:column, $content:center);
+        border: 1px solid $colorPrincipal;
+        padding: $espacioS;
+        width: 45%;
+        margin: $espacioS;
+        border-radius: $borderRadius;
+    }       
+}
 
-                img{
-                    width: 40%;
-                    margin: $espacioS;
-                }
-                img:hover{
-                    transform: scale(1.2);
-                }
-            }
-        }       
+.img-group{
+    @include flex($direction:row, $content:center);
+    flex-wrap: wrap;
+    width: auto;
+
+    img{
+        width: 40%;
+        margin: $espacioS;
+    }
+    img:hover{
+        transform: scale(1.2);
     }
 }

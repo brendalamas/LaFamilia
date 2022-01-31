@@ -1,0 +1,22 @@
+#section-ropa{
+    @include flex($direction:column, $content:center);
+    font-family: $typography;
+    color: $colorPrincipal;
+    margin-bottom: $espacioXS;
+    h1{
+        font-size: $sizeXL;
+        margin-top: $espacioM;
+    }
+    p{
+        font-size: $sizeL;
+        margin-top: $espacioS;
+    }
+    .ropa-link{
+        @include flex($direction:row, $content:center);
+        a{
+            margin: $espacioM;
+            font-size: $espacioM;
+        }
+    }
+    display: none;
+}

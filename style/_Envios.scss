@@ -1,0 +1,17 @@
+#section-envios{
+    @include flex($direction:column, $content:center);
+    font-family: $typography;
+    background-color: $colorPrincipal;
+    color: $colorSecundario;
+    margin-bottom: $espacioXS;
+    display: none;
+    h1{
+        font-size: $sizeXL;
+        margin-top: $espacioM;
+    }
+    p{
+        font-size: $sizeL;
+        margin-top: $espacioS;
+        text-align: center;
+    }
+}

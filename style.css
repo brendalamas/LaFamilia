@@ -62,14 +62,15 @@ footer .div-follow h4, footer .div-visit h4 {
   margin: 2.5rem 1.5rem;
   font-size: 2rem;
 }
-#section-paniales #paniales {
+
+.flex-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#section-paniales #paniales .paniales-columns {
+.flex-row .flex-columns {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +81,8 @@ footer .div-follow h4, footer .div-visit h4 {
   margin: 1rem;
   border-radius: 10px;
 }
-#section-paniales #paniales .paniales-columns .img-group {
+
+.img-group {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,11 +90,11 @@ footer .div-follow h4, footer .div-visit h4 {
   flex-wrap: wrap;
   width: auto;
 }
-#section-paniales #paniales .paniales-columns .img-group img {
+.img-group img {
   width: 40%;
   margin: 1rem;
 }
-#section-paniales #paniales .paniales-columns .img-group img:hover {
+.img-group img:hover {
   transform: scale(1.2);
 }
 
@@ -184,6 +186,71 @@ footer .div-follow h4, footer .div-visit h4 {
     text-align: center;
   }
 }
+#section-juguetes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Acme", sans-serif;
+  color: #0dc1ee;
+  display: none;
+}
+#section-juguetes h1 {
+  text-align: center;
+  margin: 2.5rem 1.5rem;
+  font-size: 2rem;
+}
+
+#section-ropa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Acme", sans-serif;
+  color: #0dc1ee;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+#section-ropa h1 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+#section-ropa p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+#section-ropa .ropa-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#section-ropa .ropa-link a {
+  margin: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#section-envios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Acme", sans-serif;
+  background-color: #0dc1ee;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+#section-envios h1 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+#section-envios p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
