@@ -14,3 +14,7 @@ nav{
         padding: $espacioXS;
     }
 }
+nav button:hover{
+    background-color: $colorPrincipal;
+    color: $colorSecundario;
+}

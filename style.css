@@ -28,6 +28,11 @@ nav button {
   padding: 0.5rem;
 }
 
+nav button:hover {
+  background-color: #0dc1ee;
+  color: #ffffff;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -44,8 +49,25 @@ footer .div-follow h3, footer .div-visit h3 {
 }
 footer .div-follow h4, footer .div-visit h4 {
   font-size: 1.5rem;
+}
+footer .div-follow a, footer .div-visit a {
+  font-size: 1rem;
   font-weight: 200;
   margin-top: 1rem;
+  color: #ffffff;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #0dc1ee;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 #section-paniales {
@@ -110,82 +132,6 @@ footer .div-follow h4, footer .div-visit h4 {
   padding: 2.5rem;
 }
 
-@media screen and (max-width: 2560px) {
-  nav button {
-    font-size: 2.5rem;
-  }
-
-  #section-paniales h1, h2, footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 1440px) {
-  header img {
-    height: 20vh;
-  }
-
-  footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a {
-    font-size: 2.3rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  header img {
-    height: 15vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  header img {
-    width: 35vw;
-    height: 13vh;
-  }
-
-  nav {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  nav button {
-    margin: 1rem;
-  }
-
-  footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a {
-    font-size: 2rem;
-  }
-
-  footer .div-follow h3, footer .div-visit h3 {
-    font-weight: 500;
-  }
-}
-@media screen and (max-width: 425px) {
-  header img {
-    height: 13vh;
-    width: 33vw;
-  }
-
-  nav button {
-    margin: 0.5rem;
-    font-size: 1rem;
-  }
-
-  #section-paniales h1 {
-    font-size: 1.5rem;
-    margin: 1rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  footer .div-follow h3, footer .div-visit h3, footer .div-visit h4, footer .div-follow h4, a {
-    font-size: 1rem;
-  }
-
-  #section-inicio h1, #section-inicio p {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-}
 #section-juguetes {
   display: flex;
   flex-direction: column;
@@ -210,6 +156,9 @@ footer .div-follow h4, footer .div-visit h4 {
   color: #0dc1ee;
   margin-bottom: 0.5rem;
   display: none;
+}
+#section-ropa .ropa-logo {
+  width: 15%;
 }
 #section-ropa h1 {
   font-size: 2.5rem;
@@ -247,10 +196,148 @@ footer .div-follow h4, footer .div-visit h4 {
 }
 #section-envios p {
   font-size: 2rem;
-  margin-top: 1rem;
+  margin: 1rem;
   text-align: center;
 }
 
+.flex-ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+.flex-ul ul {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 2560px) {
+  nav button {
+    font-size: 2.5rem;
+  }
+
+  #section-paniales h1, h2, footer .div-follow h3, footer .div-visit h3, footer .div-visit a, footer .div-follow a, a {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header img {
+    height: 20vh;
+  }
+
+  footer .div-follow h3, footer .div-visit h3, footer .div-visit a, footer .div-follow a, a {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header img {
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  header img {
+    width: 35vw;
+    height: 13vh;
+  }
+
+  nav {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav button {
+    margin: 1rem;
+  }
+
+  .flex-row {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .flex-row .flex-columns {
+    width: 80%;
+  }
+
+  #section-paniales h1, h2, #section-juguetes h1 {
+    font-size: 3rem;
+  }
+
+  .img-group img {
+    width: 50%;
+  }
+
+  #section-ropa .ropa-logo {
+    width: 35%;
+  }
+
+  #section-ropa h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  #section-ropa p {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 200;
+    margin: 1.5rem;
+  }
+
+  footer .div-follow h3, footer .div-visit h3, footer .div-follow {
+    font-size: 2rem;
+  }
+
+  footer .div-follow h3, footer .div-visit h3 {
+    font-weight: 500;
+  }
+
+  footer .div-visit h3 {
+    margin-bottom: 1rem;
+  }
+
+  footer .div-visit h4, footer .div-visit a, footer .div-follow a {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .div-visit {
+    padding-right: 1rem;
+  }
+
+  .div-follow {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  header img {
+    height: 13vh;
+    width: 33vw;
+  }
+
+  nav button {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #section-paniales h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer .div-follow h3, footer .div-visit h3, footer .div-visit a, footer .div-follow a, a {
+    font-size: 1rem;
+  }
+
+  #section-inicio h1, #section-inicio p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
 * {
   margin: 0;
   box-sizing: border-box;

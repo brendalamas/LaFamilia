@@ -15,9 +15,24 @@ footer{
         }
         h4{
             font-size: $sizeM;
+        }
+        a{
+            font-size: $sizeS;
             font-weight: 200;
             margin-top: $espacioS;
+            color: $colorSecundario;
         }
     }
         
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: $colorPrincipal;
+}
+a:link{
+    text-decoration:none;
+
 }
