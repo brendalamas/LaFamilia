@@ -1,26 +1,29 @@
 footer{
     @include flex ($direction:row, $content:space-around);
-
-    // background-color: #0dc1ee;
-    background-color: $colorPrincipal;
+    background-color: $colorSecundario;
     width: 100vw;
     font-family: $typography;
-    color: $colorSecundario;
+    color: $colorPrincipal;
     padding: $espacioL;
+    .div-visit{
+        @include flex ($direction:column, $content:center);
+    }
 
     .div-follow , .div-visit {
         
         h3{
-            font-size: $sizeL;
+            font-size: $sizeXXL;
+            margin-bottom: $espacioS;
         }
         h4{
-            font-size: $sizeM;
+            font-size: $sizeXL;
+            font-weight: 300;
         }
         a{
-            font-size: $sizeS;
+            font-size: $sizeXL;
             font-weight: 200;
             margin-top: $espacioS;
-            color: $colorSecundario;
+            color: $colorPrincipal;
         }
     }
         

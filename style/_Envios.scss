@@ -7,18 +7,16 @@
     display: none;
     h1{
         font-size: $sizeXL;
-        margin-top: $espacioM;
+        margin-top: $espacioL;
+        margin-bottom: $espacioM;
     }
     p{
         font-size: $sizeL;
-        margin: $espacioS;
         text-align: center;
     }
 }
 .flex-ul{
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
+    @include flex($direction: row, $content:center);
     align-items: center;
     margin: $espacioL;
     ul{

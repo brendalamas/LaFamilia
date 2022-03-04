@@ -1,6 +1,6 @@
 header{
     @include flex($direction:row, $content:center);
-    background-color: $colorPrincipal;
+    background-color: $colorSecundario;
 
     img{
         width: 25vw;
