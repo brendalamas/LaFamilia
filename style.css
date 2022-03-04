@@ -210,14 +210,32 @@ a:link {
 
 .flex-ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-items: center;
   margin: 2rem;
 }
-.flex-ul ul {
+.flex-ul h2 {
   font-size: 2rem;
+}
+.flex-ul h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.flex-ul .card-envios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  padding: 1rem;
+  margin: 1.5rem;
+  border-radius: 10px;
+}
+.flex-ul .card-envios:hover {
+  background-color: #ffffff;
+  color: #0dc1ee;
 }
 
 @media screen and (max-width: 2560px) {

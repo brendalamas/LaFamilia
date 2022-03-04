@@ -16,10 +16,25 @@
     }
 }
 .flex-ul{
-    @include flex($direction: row, $content:center);
+    @include flex($direction: column, $content:center);
     align-items: center;
     margin: $espacioL;
-    ul{
+    h2{
         font-size: $sizeL;
+    }
+    h3{
+        font-size: $sizeM;
+        font-weight: 400;
+    }
+    .card-envios{
+        @include flex($direction: column, $content:center);
+        border: 1px solid $colorSecundario;
+        padding: $espacioS;
+        margin: $espacioM;
+        border-radius: $borderRadius;
+    }
+    .card-envios:hover{
+        background-color: $colorSecundario;
+        color: $colorPrincipal;
     }
 }
