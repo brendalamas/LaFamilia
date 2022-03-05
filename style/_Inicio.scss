@@ -1,8 +1,47 @@
 #section-inicio{
     @include flex ($direction:column, $content:center);
-    background-color: #ace9d9;
+    width: 65%;
+    background-image: url("https://i.pinimg.com/474x/a1/86/78/a1867852dd54daa48ff8e8f375d235de.jpg");
+    height: 55rem;    
     font-family: $typography;
     color: $colorPrincipal;
     font-size: $sizeL;
     padding: $espacioXL;
+    border-radius: $borderRadius;
+    margin: $espacioM;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+    .card-contenedor{
+        background-color: $colorSecundario;
+        padding: $espacioL;
+        border-radius: $borderRadius;
+    
+        .card-integrantes{
+            @include flex ($direction:column, $content:center);
+            h1{
+                margin-top: $espacioL;
+            }
+
+            h4{
+                font-weight: 200;
+                margin-top: $espacioS;
+            }
+            p{
+                margin-top: $espacioXL;
+            }
+        }
+        .card-local{
+            @include flex ($direction:column, $content:center);
+            h1{
+                margin-top: $espacioXXXXL;
+            }
+            h4{
+                font-weight: 200;
+                margin-top: $espacioS;
+            }
+        }
+    }
+    a{
+        margin-top: $espacioL;
+        margin-bottom: $espacioXL;
+    }
 }

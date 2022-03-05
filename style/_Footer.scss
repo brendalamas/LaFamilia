@@ -1,41 +1,30 @@
 footer{
-    @include flex ($direction:row, $content:space-around);
+    @include flex ($direction:column, $content:space-around);
     background-color: $colorSecundario;
     width: 100vw;
     font-family: $typography;
     color: $colorPrincipal;
     padding: $espacioL;
-    .div-visit{
-        @include flex ($direction:column, $content:center);
+    font-size: $sizeM;
+    h1{
+        margin-bottom: $espacioS;
     }
-
-    .div-follow , .div-visit {
-        
-        h3{
-            font-size: $sizeXXL;
-            margin-bottom: $espacioS;
-        }
-        h4{
-            font-size: $sizeXL;
-            font-weight: 300;
-        }
+    .redes{
+        margin-top: $espacioXL;
         a{
-            font-size: $sizeXL;
-            font-weight: 200;
-            margin-top: $espacioS;
+            color: $colorSecundario;
+            background-color: $colorPrincipal;
+            margin: $espacioS;
+            padding: $espacioS;
+            border-radius: $borderRadius;
+            font-size: $sizeM;
+        }
+        a:link{
+            text-decoration:none;
+        }
+        a:hover{
             color: $colorPrincipal;
+            background-color: $colorSecundario;
         }
     }
-        
-}
-.redes{
-    display: flex;
-    flex-direction: column;
-}
-a{
-    color: $colorPrincipal;
-}
-a:link{
-    text-decoration:none;
-
 }

@@ -8,3 +8,6 @@ header{
         margin: $espacioL;
     }
 }
+body{
+    @include flex($direction:column, $content:center);
+}

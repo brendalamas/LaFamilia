@@ -11,13 +11,6 @@ header img {
   margin: 2rem;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 nav {
   display: flex;
   flex-direction: row;
@@ -42,7 +35,7 @@ nav button:hover {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
@@ -50,28 +43,39 @@ footer {
   font-family: "Acme", sans-serif;
   color: #0dc1ee;
   padding: 2rem;
-  font-size: 1.5rem;
 }
-footer h1 {
+footer .div-visit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .div-follow h3, footer .div-visit h3 {
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
-footer .redes {
-  margin-top: 2.5rem;
+footer .div-follow h4, footer .div-visit h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
 }
-footer .redes a {
-  color: #ffffff;
-  background-color: #0dc1ee;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
-  font-size: 1.5rem;
-}
-footer .redes a:link {
-  text-decoration: none;
-}
-footer .redes a:hover {
+footer .div-follow a, footer .div-visit a {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-top: 1rem;
   color: #0dc1ee;
-  background-color: #ffffff;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #0dc1ee;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 #section-paniales {
@@ -81,59 +85,47 @@ footer .redes a:hover {
   align-items: center;
   font-family: "Acme", sans-serif;
   color: #0dc1ee;
-  margin: 2.5rem 1.5rem;
-  font-size: 2rem;
   display: none;
 }
 #section-paniales h1 {
-  margin: 1.5rem;
+  text-align: center;
+  margin: 2.5rem 1.5rem;
+  font-size: 2rem;
 }
-#section-paniales .botones {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#section-paniales .botones button {
-  background-color: #0dc1ee;
-  color: #ffffff;
-  border: 1px solid #CCF8FB;
-  font-family: "Acme", sans-serif;
-  padding: 1rem;
-  margin: 1rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-}
-#section-paniales .botones button:hover {
-  background-color: #ffffff;
-  color: #0dc1ee;
-}
-#section-paniales #card-paniales-pampers, #section-paniales #card-paniales-huggies, #section-paniales #card-paniales-babysec, #section-paniales #card-paniales-estrella, #section-paniales #card-paniales-duffy, #section-paniales #card-paniales-caricias {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #0dc1ee;
-  margin: 1.5rem;
-  padding: 1.5rem;
-  width: 65%;
-  border-radius: 10px;
-  border: 2px solid #CCF8FB;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-#section-paniales .img-group {
+
+.flex-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#section-paniales .img-group img {
-  width: 27%;
+.flex-row .flex-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0dc1ee;
+  padding: 1rem;
+  width: 45%;
+  margin: 1rem;
+  border-radius: 10px;
 }
 
-#card-paniales-pampers, #card-paniales-huggies, #card-paniales-babysec, #card-paniales-estrella, #card-paniales-duffy, #card-paniales-caricias {
-  display: none;
+.img-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+}
+.img-group img {
+  width: 40%;
+  margin: 1rem;
+}
+.img-group img:hover {
+  transform: scale(1.2);
 }
 
 #section-inicio {
@@ -141,54 +133,12 @@ footer .redes a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 65%;
-  background-image: url("https://i.pinimg.com/474x/a1/86/78/a1867852dd54daa48ff8e8f375d235de.jpg");
-  height: 55rem;
+  background-color: #ace9d9;
   font-family: "Acme", sans-serif;
   color: #0dc1ee;
   font-size: 2rem;
   padding: 2.5rem;
-  border-radius: 10px;
-  margin: 1.5rem;
-  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
-}
-#section-inicio .card-contenedor {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-}
-#section-inicio .card-contenedor .card-integrantes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#section-inicio .card-contenedor .card-integrantes h1 {
-  margin-top: 2rem;
-}
-#section-inicio .card-contenedor .card-integrantes h4 {
-  font-weight: 200;
-  margin-top: 1rem;
-}
-#section-inicio .card-contenedor .card-integrantes p {
-  margin-top: 2.5rem;
-}
-#section-inicio .card-contenedor .card-local {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#section-inicio .card-contenedor .card-local h1 {
-  margin-top: 4rem;
-}
-#section-inicio .card-contenedor .card-local h4 {
-  font-weight: 200;
-  margin-top: 1rem;
-}
-#section-inicio a {
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
+  border: 2px solid black;
 }
 
 #section-juguetes {
@@ -421,4 +371,4 @@ footer .redes a:hover {
   box-sizing: border-box;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
