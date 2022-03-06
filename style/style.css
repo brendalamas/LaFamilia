@@ -80,7 +80,7 @@ footer .redes a:hover {
   justify-content: center;
   align-items: center;
   font-family: "Acme", sans-serif;
-  color: #0dc1ee;
+  color: "red";
   margin: 2.5rem 1.5rem;
   font-size: 2rem;
   display: none;
@@ -128,31 +128,15 @@ footer .redes a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #CCF8FB;
-  margin: 1rem;
 }
-#section-paniales .card-detalle img {
-  width: 30%;
+#section-paniales .card-detalle .card-img {
+  width: 20px;
 }
 
 #card-paniales-pampers, #card-paniales-huggies,
 #card-paniales-babysec, #card-paniales-estrella,
 #card-paniales-duffy, #card-paniales-caricias {
   display: none;
-}
-
-.boton-volver-atras {
-  border-radius: 10px;
-  border: 1px solid #CCF8FB;
-  background-color: #0dc1ee;
-  color: #ffffff;
-  padding: 1.5rem;
-  margin: 1.5rem;
-}
-
-.boton-volver-atras:hover {
-  background-color: #ffffff;
-  color: #0dc1ee;
 }
 
 #section-inicio {

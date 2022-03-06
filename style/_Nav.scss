@@ -1,8 +1,5 @@
 nav{
     @include flex ($direction:row, $content:center);
-
-    // display: flex;
-    // justify-content: center;
     button{
         margin: 1rem;
         font-family: $typography;

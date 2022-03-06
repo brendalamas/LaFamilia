@@ -27,8 +27,9 @@ const cardEstrella = document.querySelector("#card-paniales-estrella")
 const cardDuffy = document.querySelector("#card-paniales-duffy")
 const cardCaricias = document.querySelector("#card-paniales-caricias")
 
+const botonVolverAtras = document.querySelectorAll(".boton-volver-atras")
 
-
+//botones principales del nav
 paniales.onclick =()=>{
     sectionJuguetes.style.display="none"
     sectionRopa.style.display="none"
@@ -71,6 +72,8 @@ envios.onclick =()=>{
     sectionRopa.style.display="none"
     sectionEnvios.style.display="flex"
 }
+
+
 // click en los botones de seccion paniales
 pampers.onclick = () =>{
     cardPampers.style.display="flex"
@@ -119,4 +122,14 @@ caricias.onclick = () =>{
     cardEstrella.style.display="none"
     cardDuffy.style.display="none"
     cardCaricias.style.display="flex"
+}
+
+//boton volver atras de las card
+
+botonVolverAtras.onclick = () => {
+    sectionJuguetes.style.display="none"
+    sectionRopa.style.display="none"
+    sectionPaniales.style.display="flex"
+    sectionEnvios.style.display="none"
+    sectionInicio.style.display="none"
 }
