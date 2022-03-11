@@ -1,4 +1,4 @@
-#section-envios{
+#section-pagos{
     @include flex($direction:column, $content:center);
     font-family: $typography;
     color: $colorPrincipal;
@@ -8,7 +8,7 @@
     border-radius: $borderRadius;
     margin: $espacioM;
     box-shadow: 0 0 15px 0 $colorPrincipal;
-    .card-envios-principal{
+    .card-pagos-principal{
         @include flex($direction:column, $content:center);
         background-color: $colorSecundario;
         padding: $espacioS;
@@ -18,47 +18,33 @@
             margin-top: $espacioS;
             font-size: $sizeL;
         }
-        h4{
-            font-weight: 200;
-        }
-        h3,h4{
-            margin-top: $espacioS;
-            font-size: $sizeM;
-            text-align: center;
-        }
-        h3{
-            font-weight: "bold";
-        }
-        img{
-            width: 55%;
-            margin-top: $espacioM;
-        }
-        
-        #card-envios{
-            @include flex($direction:row, $content:center);
+        #card-pagos{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
             color:$colorPrincipal;
             margin: $espacioM;
             padding: $espacioM;
-            width: 95%;
             border-radius: $borderRadius;
             border: 2px solid #CCF8FB;
-            .detalle-envios{
-                @include flex($direction:column, $content:center);
+            .detalle-pagos{
+                @include flex($direction:row, $content:flex-start);
                 padding: $espacioS;
                 border: 1px solid #CCF8FB;
                 border-radius: $borderRadius;
                 margin: $espacioM;
                 h4{
                     font-size: $sizeL;
-                    margin-bottom: $espacioS;
+                    margin-left: $espacioS;
+                    font-weight: 200;
                 }
-                ul{
-                    list-style: none;
-                    font-size: $sizeM;
-
+                img{
+                    width: 20%;
                 }
             }
         }
     }
+    
     display: none;
 }

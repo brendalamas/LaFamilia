@@ -8,4 +8,34 @@
         margin: $espacioXL $espacioM;
         font-size: $sizeL;
     }
+    #card-juguetes{
+        @include flex($direction:column, $content:center);
+        color:$colorPrincipal;
+        margin: $espacioM;
+        padding: $espacioM;
+        width: 65%;
+        border-radius: $borderRadius;
+        border: 2px solid #CCF8FB;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        .card-detalle-juguetes{
+            @include flex($direction:row, $content:center);
+            border: 1px solid #CCF8FB;
+            margin: $espacioS;
+            img{
+                width: 30%;
+            }
+            .detalle-juguete{
+                @include flex($direction:column, $content:center);
+                margin: $espacioM;
+                h4{
+                    font-size: $sizeM;
+                    margin-bottom: $espacioS;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+            
+        }
+    }
 }

@@ -5,10 +5,18 @@ header {
   align-items: center;
   background-color: #ffffff;
 }
+
 header img {
   width: 25vw;
   height: 25vh;
   margin: 2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
@@ -17,6 +25,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 nav button {
   margin: 1rem;
   font-family: "Acme", sans-serif;
@@ -35,7 +44,7 @@ nav button:hover {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
@@ -43,39 +52,33 @@ footer {
   font-family: "Acme", sans-serif;
   color: #0dc1ee;
   padding: 2rem;
+  font-size: 1.5rem;
 }
-footer .div-visit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-footer .div-follow h3, footer .div-visit h3 {
-  font-size: 3rem;
+
+footer h1 {
   margin-bottom: 1rem;
 }
-footer .div-follow h4, footer .div-visit h4 {
-  font-size: 2.5rem;
-  font-weight: 300;
-}
-footer .div-follow a, footer .div-visit a {
-  font-size: 2.5rem;
-  font-weight: 200;
-  margin-top: 1rem;
-  color: #0dc1ee;
+
+footer .redes {
+  margin-top: 2.5rem;
 }
 
-.redes {
-  display: flex;
-  flex-direction: column;
+footer .redes a {
+  color: #ffffff;
+  background-color: #0dc1ee;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
 }
 
-a {
-  color: #0dc1ee;
-}
-
-a:link {
+footer .redes a:link {
   text-decoration: none;
+}
+
+footer .redes a:hover {
+  color: #0dc1ee;
+  background-color: #ffffff;
 }
 
 #section-paniales {
@@ -85,47 +88,118 @@ a:link {
   align-items: center;
   font-family: "Acme", sans-serif;
   color: #0dc1ee;
-  display: none;
-}
-#section-paniales h1 {
-  text-align: center;
   margin: 2.5rem 1.5rem;
   font-size: 2rem;
+  display: none;
 }
 
-.flex-row {
+#section-paniales h1 {
+  margin: 1.5rem;
+}
+
+#section-paniales .botones {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
-.flex-row .flex-columns {
+
+#section-paniales .botones button {
+  background-color: #ffffff;
+  color: #ffffff;
+  border: 1px solid #CCF8FB;
+  font-family: "Acme", sans-serif;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+#section-paniales .botones button img {
+  width: 5rem;
+}
+
+#section-paniales .botones button:hover {
+  background-color: #0dc1ee;
+  color: #0dc1ee;
+}
+
+#section-paniales #card-paniales-pampers, #section-paniales #card-paniales-huggies,
+#section-paniales #card-paniales-babysec, #section-paniales #card-paniales-estrella,
+#section-paniales #card-paniales-duffy, #section-paniales #card-paniales-caricias {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #0dc1ee;
-  padding: 1rem;
-  width: 45%;
-  margin: 1rem;
+  color: #0dc1ee;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  width: 65%;
   border-radius: 10px;
+  border: 2px solid #CCF8FB;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.img-group {
+#section-paniales .card-detalle {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  width: auto;
-}
-.img-group img {
-  width: 40%;
+  border: 1px solid #CCF8FB;
   margin: 1rem;
 }
-.img-group img:hover {
-  transform: scale(1.2);
+
+#section-paniales .card-detalle img {
+  width: 30%;
+}
+
+#section-paniales .card-detalle .detalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+#section-paniales .card-detalle .detalle h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#section-paniales .card-detalle .detalle p, #section-paniales .card-detalle .detalle li {
+  font-size: 1.2rem;
+}
+
+#section-paniales .card-detalle .detalle .talles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+#section-paniales .card-detalle .detalle .talles li {
+  list-style: none;
+}
+
+#card-paniales-pampers, #card-paniales-huggies,
+#card-paniales-babysec, #card-paniales-estrella,
+#card-paniales-duffy, #card-paniales-caricias {
+  display: none;
+}
+
+.boton-volver-atras {
+  border-radius: 10px;
+  border: 1px solid #CCF8FB;
+  background-color: #0dc1ee;
+  color: #ffffff;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+
+.boton-volver-atras:hover {
+  background-color: #ffffff;
+  color: #0dc1ee;
 }
 
 #section-inicio {
@@ -133,12 +207,63 @@ a:link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ace9d9;
+  width: 65%;
+  background-image: url("https://i.pinimg.com/474x/a1/86/78/a1867852dd54daa48ff8e8f375d235de.jpg");
+  height: 55rem;
   font-family: "Acme", sans-serif;
   color: #0dc1ee;
   font-size: 2rem;
   padding: 2.5rem;
-  border: 2px solid black;
+  border-radius: 10px;
+  margin: 1.5rem;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+#section-inicio .card-contenedor {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#section-inicio .card-contenedor .card-integrantes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-inicio .card-contenedor .card-integrantes h1 {
+  margin-top: 2rem;
+}
+
+#section-inicio .card-contenedor .card-integrantes h4 {
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+#section-inicio .card-contenedor .card-integrantes p {
+  margin-top: 2.5rem;
+}
+
+#section-inicio .card-contenedor .card-local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-inicio .card-contenedor .card-local h1 {
+  margin-top: 4rem;
+}
+
+#section-inicio .card-contenedor .card-local h4 {
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+#section-inicio a {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 #section-juguetes {
@@ -150,10 +275,56 @@ a:link {
   color: #0dc1ee;
   display: none;
 }
+
 #section-juguetes h1 {
   text-align: center;
   margin: 2.5rem 1.5rem;
   font-size: 2rem;
+}
+
+#section-juguetes .card-juguetes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  width: 65%;
+  border-radius: 10px;
+  border: 2px solid #CCF8FB;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: red;
+}
+
+#section-juguetes .card-juguetes .card-detalle-juguetes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #CCF8FB;
+  margin: 1rem;
+}
+
+#section-juguetes .card-juguetes .card-detalle-juguetes img {
+  width: 30%;
+}
+
+#section-juguetes .card-juguetes .card-detalle-juguetes .detalle-juguete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+#section-juguetes .card-juguetes .card-detalle-juguetes .detalle-juguete h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#section-juguetes .card-juguetes .card-detalle-juguetes .detalle-juguete p {
+  font-size: 1.2rem;
 }
 
 #section-ropa {
@@ -166,23 +337,28 @@ a:link {
   margin-bottom: 0.5rem;
   display: none;
 }
+
 #section-ropa .ropa-logo {
   width: 15%;
 }
+
 #section-ropa h1 {
   font-size: 2.5rem;
   margin-top: 1.5rem;
 }
+
 #section-ropa p {
   font-size: 2rem;
   margin-top: 1rem;
 }
+
 #section-ropa .ropa-link {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 #section-ropa .ropa-link a {
   margin: 1.5rem;
   font-size: 1.5rem;
@@ -199,11 +375,13 @@ a:link {
   margin-bottom: 0.5rem;
   display: none;
 }
+
 #section-envios h1 {
   font-size: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
+
 #section-envios p {
   font-size: 2rem;
   text-align: center;
@@ -217,13 +395,16 @@ a:link {
   align-items: center;
   margin: 2rem;
 }
+
 .flex-ul h2 {
   font-size: 2rem;
 }
+
 .flex-ul h3 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
 .flex-ul .card-envios {
   display: flex;
   flex-direction: column;
@@ -234,6 +415,7 @@ a:link {
   margin: 1.5rem;
   border-radius: 10px;
 }
+
 .flex-ul .card-envios:hover {
   background-color: #ffffff;
   color: #0dc1ee;
@@ -370,5 +552,7 @@ a:link {
   margin: 0;
   box-sizing: border-box;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.scss.map */

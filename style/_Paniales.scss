@@ -10,7 +10,7 @@
     .botones{
     @include flex($direction:row, $content:center);
         button{
-            background-color: $colorPrincipal;
+            background-color: $colorSecundario;
             color: $colorSecundario;
             border: 1px solid #CCF8FB;
             font-family: $typography;
@@ -18,9 +18,12 @@
             margin: $espacioS;
             font-size: $sizeM;
             border-radius: $borderRadius;
+            img{
+                width: 5rem;
+            }
         }
         button:hover{
-            background-color: $colorSecundario;
+            background-color: $colorPrincipal;
             color: $colorPrincipal;
         }
     }
@@ -37,11 +40,29 @@
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
     .card-detalle{
-        @include flex($direction:column, $content:center);
+        @include flex($direction:row, $content:center);
         border: 1px solid #CCF8FB;
         margin: $espacioS;
         img{
             width: 30%;
+        }
+        .detalle{
+            @include flex($direction:column, $content:center);
+            margin: $espacioM;
+            h4{
+                font-size: $sizeM;
+                margin-bottom: $espacioS;
+            }
+            p, li{
+                font-size: 1.2rem;
+            }
+            .talles{
+                @include flex($direction:row, $content:center);
+                margin-top: $espacioM;
+                li{
+                    list-style: none;
+                }
+            }
         }
         
     }

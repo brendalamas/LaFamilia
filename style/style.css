@@ -80,7 +80,7 @@ footer .redes a:hover {
   justify-content: center;
   align-items: center;
   font-family: "Acme", sans-serif;
-  color: "red";
+  color: #0dc1ee;
   margin: 2.5rem 1.5rem;
   font-size: 2rem;
   display: none;
@@ -95,7 +95,7 @@ footer .redes a:hover {
   align-items: center;
 }
 #section-paniales .botones button {
-  background-color: #0dc1ee;
+  background-color: #ffffff;
   color: #ffffff;
   border: 1px solid #CCF8FB;
   font-family: "Acme", sans-serif;
@@ -104,8 +104,11 @@ footer .redes a:hover {
   font-size: 1.5rem;
   border-radius: 10px;
 }
+#section-paniales .botones button img {
+  width: 5rem;
+}
 #section-paniales .botones button:hover {
-  background-color: #ffffff;
+  background-color: #0dc1ee;
   color: #0dc1ee;
 }
 #section-paniales #card-paniales-pampers, #section-paniales #card-paniales-huggies,
@@ -125,18 +128,58 @@ footer .redes a:hover {
 }
 #section-paniales .card-detalle {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #CCF8FB;
+  margin: 1rem;
+}
+#section-paniales .card-detalle img {
+  width: 30%;
+}
+#section-paniales .card-detalle .detalle {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1.5rem;
 }
-#section-paniales .card-detalle .card-img {
-  width: 20px;
+#section-paniales .card-detalle .detalle h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#section-paniales .card-detalle .detalle p, #section-paniales .card-detalle .detalle li {
+  font-size: 1.2rem;
+}
+#section-paniales .card-detalle .detalle .talles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+#section-paniales .card-detalle .detalle .talles li {
+  list-style: none;
 }
 
 #card-paniales-pampers, #card-paniales-huggies,
 #card-paniales-babysec, #card-paniales-estrella,
 #card-paniales-duffy, #card-paniales-caricias {
   display: none;
+}
+
+.boton-volver-atras {
+  border-radius: 10px;
+  border: 1px solid #CCF8FB;
+  background-color: #0dc1ee;
+  color: #ffffff;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+
+.boton-volver-atras:hover {
+  background-color: #ffffff;
+  color: #0dc1ee;
 }
 
 #section-inicio {
@@ -207,6 +250,45 @@ footer .redes a:hover {
   text-align: center;
   margin: 2.5rem 1.5rem;
   font-size: 2rem;
+}
+#section-juguetes .card-juguetes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  width: 65%;
+  border-radius: 10px;
+  border: 2px solid #CCF8FB;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: red;
+}
+#section-juguetes .card-juguetes .card-detalle-juguetes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #CCF8FB;
+  margin: 1rem;
+}
+#section-juguetes .card-juguetes .card-detalle-juguetes img {
+  width: 30%;
+}
+#section-juguetes .card-juguetes .card-detalle-juguetes .detalle-juguete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+#section-juguetes .card-juguetes .card-detalle-juguetes .detalle-juguete h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#section-juguetes .card-juguetes .card-detalle-juguetes .detalle-juguete p {
+  font-size: 1.2rem;
 }
 
 #section-ropa {
