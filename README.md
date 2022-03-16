@@ -16,4 +16,12 @@
   <li> Metodos de Pago: Metodos de pago que aceptan</li>
 </ul>
 
+<h4>Tecnologias utilizadas</h4>
+<ul>
+  <li>HTML5</li>
+  <li>JS</li>
+  <li>SASS</li>
+</ul>
+
+
 <h5>Gracias por pasar!</h5>
