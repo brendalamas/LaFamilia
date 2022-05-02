@@ -1,13 +1,50 @@
-header{
-    @include flex($direction:row, $content:center);
-    background-color: $colorSecundario;
+body{
+    @include flex ($direction:column, $justify:center, $align:center);
+    background-color: $colorPrincipal;
+}
 
-    img{
-        width: 25vw;
-        height: 25vh;
-        margin: $espacioL;
+header{
+    @include flex ($direction:row, $justify:space-around, $align:center);
+    margin-top: $espacioXS;
+    width: 100vw;
+    height: 18vh;
+    animation-name: animacion;
+    animation-duration: 5s;
+    .contenedor-logo{
+        width: 12%;
+        img{
+            width: 100%;
+        }
+    }
+    button{
+        margin: 1rem;
+        font-family: $typography;
+        font-size: $sizeM;
+        color: $colorSecundario;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
     }
 }
-body{
-    @include flex($direction:column, $content:center);
+
+header div button:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $colorSecundario;
+    // animacion de izq a der
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
 }
+header div button:hover:after{
+    // animacion de izq a der
+    transform-origin: left;
+    transform: scaleX(1);
+}
+

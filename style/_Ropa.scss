@@ -1,65 +1,39 @@
 #section-ropa{
-    @include flex($direction:column, $content:center);
+    @include flex ($direction:column, $justify:center, $align:center);
     font-family: $typography;
-    color: $colorPrincipal;
-    width: 65%;
-    font-size: $sizeL;
+    color: $colorSecundario;
     padding: $espacioXL;
     border-radius: $borderRadius;
     margin: $espacioM;
-    box-shadow: 0 0 15px 0 $colorPrincipal;
-    .ropa-logo{
-        width: 25%;
-    }
+    box-shadow: 0 0 10px 0 $colorTerciario;
     .card-principal{
-        background-color: $colorSecundario;
         padding: $espacioS;
         border-radius: $borderRadius;
-        h1{
+        h2{
             text-align: center;
-            margin-top: $espacioS;
-            font-size: $sizeL;
-        }
-        h4{
-            font-weight: 200;
-            margin-top: $espacioS;
-            font-size: $sizeM;
-            text-align: center;
-        }
-        #card-ropa{
-            @include flex($direction:column, $content:center);
-            color:$colorPrincipal;
-            margin: $espacioM;
-            padding: $espacioM;
-            width: 95%;
-            border-radius: $borderRadius;
-            border: 2px solid #CCF8FB;
-            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-            .card-detalle-ropa{
-                @include flex($direction:row, $content:center);
-                border: 1px solid #CCF8FB;
-                margin: $espacioS;
-                img{
-                    width: 30%;
-                }
-                .detalle-ropa{
-                    @include flex($direction:column, $content:center);
-                    margin: $espacioM;
-                    h4{
-                        font-size: $sizeM;
-                        margin-bottom: $espacioS;
-                    }
-                    p{
-                        font-size: 1.2rem;
-                    }
-                }
+            margin-bottom: $espacioXL;
+            font-size: $sizeXL;
+            a{
+                text-decoration: underline;
+                color: $colorSecundario;
             }
         }
-        .contacto-ropa{
-            @include flex($direction:column, $content:center);
+        .contenedor-contactos-ropa{
+            @include flex ($direction:column, $justify:center, $align:center);
             margin-top: $espacioM;
-            a{
-                font-size: $sizeL;
+            p{
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 300;
+                line-height: 1;
+            }
+            .contenedor-redes-ropa{
+                @include flex ($direction:row, $justify:space-around, $align:center);
+                width:100% ;
+                margin-top: 8rem;
+                a{
+                    text-decoration: none;
+                }
             }
         }
     }

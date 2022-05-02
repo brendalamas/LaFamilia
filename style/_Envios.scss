@@ -1,5 +1,5 @@
-#section-envios{
-    @include flex($direction:column, $content:center);
+#section-contacto{
+    @include flex ($direction:column, $justify:center, $align:center);
     font-family: $typography;
     color: $colorPrincipal;
     width: 65%;
@@ -9,7 +9,7 @@
     margin: $espacioM;
     box-shadow: 0 0 15px 0 $colorPrincipal;
     .card-envios-principal{
-        @include flex($direction:column, $content:center);
+        @include flex ($direction:column, $justify:center, $align:center);
         background-color: $colorSecundario;
         padding: $espacioS;
         border-radius: $borderRadius;
@@ -35,7 +35,7 @@
         }
         
         #card-envios{
-            @include flex($direction:row, $content:center);
+            @include flex ($direction:row, $justify:center, $align:center);
             color:$colorPrincipal;
             margin: $espacioM;
             padding: $espacioM;
@@ -43,7 +43,7 @@
             border-radius: $borderRadius;
             border: 2px solid #CCF8FB;
             .detalle-envios{
-                @include flex($direction:column, $content:center);
+                @include flex ($direction:column, $justify:center, $align:center);
                 padding: $espacioS;
                 border: 1px solid #CCF8FB;
                 border-radius: $borderRadius;

@@ -1,43 +1,56 @@
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-}
-header img {
-  width: 25vw;
-  height: 25vh;
-  margin: 2rem;
-}
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #8DD6F8;
 }
 
-nav {
+header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 0.5rem;
+  width: 100vw;
+  height: 18vh;
+  animation-name: animacion;
+  animation-duration: 5s;
 }
-nav button {
+header .contenedor-logo {
+  width: 12%;
+}
+header .contenedor-logo img {
+  width: 100%;
+}
+header button {
   margin: 1rem;
-  font-family: "Acme", sans-serif;
-  font-size: 2rem;
-  color: #0dc1ee;
-  background-color: #ffffff;
-  border: 1px solid #0dc1ee;
-  border-radius: 10px;
-  padding: 0.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
 }
 
-nav button:hover {
-  background-color: #0dc1ee;
-  color: #ffffff;
+header div button:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+header div button:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 #section-paniales {
@@ -45,107 +58,123 @@ nav button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Acme", sans-serif;
-  color: #0dc1ee;
-  margin: 2.5rem 1.5rem;
-  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 2rem;
   display: none;
-}
-#section-paniales h1 {
-  margin: 1.5rem;
 }
 #section-paniales .botones {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
 }
 #section-paniales .botones button {
   background-color: #ffffff;
-  color: #ffffff;
-  border: 1px solid #CCF8FB;
-  font-family: "Acme", sans-serif;
-  padding: 1rem;
-  margin: 1rem;
-  font-size: 1.5rem;
+  color: #8DD6F8;
+  border: none;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
   border-radius: 10px;
-}
-#section-paniales .botones button img {
-  width: 5rem;
+  width: 8rem;
+  cursor: pointer;
 }
 #section-paniales .botones button:hover {
-  background-color: #0dc1ee;
-  color: #0dc1ee;
+  background-color: #8DD6F8;
+  color: #ffffff;
 }
-#section-paniales #card-paniales-pampers, #section-paniales #card-paniales-huggies,
-#section-paniales #card-paniales-babysec, #section-paniales #card-paniales-estrella,
-#section-paniales #card-paniales-duffy, #section-paniales #card-paniales-caricias {
+#section-paniales #card-paniales-pampers,
+#section-paniales #card-paniales-huggies,
+#section-paniales #card-paniales-babysec,
+#section-paniales #card-paniales-estrella,
+#section-paniales #card-paniales-duffy,
+#section-paniales #card-paniales-caricias {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #0dc1ee;
-  margin: 1.5rem;
-  padding: 1.5rem;
-  width: 65%;
+  color: #ffffff;
+  margin: 3rem;
+}
+#section-paniales #card-paniales-pampers .contenedor-paniales,
+#section-paniales #card-paniales-huggies .contenedor-paniales,
+#section-paniales #card-paniales-babysec .contenedor-paniales,
+#section-paniales #card-paniales-estrella .contenedor-paniales,
+#section-paniales #card-paniales-duffy .contenedor-paniales,
+#section-paniales #card-paniales-caricias .contenedor-paniales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   border: 2px solid #CCF8FB;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-#section-paniales .card-detalle {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #CCF8FB;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 0.5rem;
   margin: 1rem;
 }
-#section-paniales .card-detalle img {
+#section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-img {
   width: 30%;
 }
-#section-paniales .card-detalle .detalle {
+#section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-img img,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-img img,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-img img,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-img img,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-img img,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-img img {
+  width: 100%;
+}
+#section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-texto,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-texto,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-texto,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-texto,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-texto,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1.5rem;
 }
-#section-paniales .card-detalle .detalle h4 {
+#section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-texto h4 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
 }
-#section-paniales .card-detalle .detalle p, #section-paniales .card-detalle .detalle li {
-  font-size: 1.2rem;
-}
-#section-paniales .card-detalle .detalle .talles {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1.5rem;
-}
-#section-paniales .card-detalle .detalle .talles li {
-  list-style: none;
-}
-
-#card-paniales-pampers, #card-paniales-huggies,
-#card-paniales-babysec, #card-paniales-estrella,
-#card-paniales-duffy, #card-paniales-caricias {
-  display: none;
-}
-
-.boton-volver-atras {
-  border-radius: 10px;
-  border: 1px solid #CCF8FB;
-  background-color: #0dc1ee;
-  color: #ffffff;
-  padding: 1.5rem;
-  margin: 1.5rem;
-}
-
-.boton-volver-atras:hover {
-  background-color: #ffffff;
-  color: #0dc1ee;
+#section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-texto p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 #section-juguetes {
@@ -153,52 +182,68 @@ nav button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Acme", sans-serif;
-  color: #0dc1ee;
+  font-family: "Josefin Sans", sans-serif;
   display: none;
-}
-#section-juguetes h1 {
-  text-align: center;
-  margin: 2.5rem 1.5rem;
-  font-size: 2rem;
 }
 #section-juguetes #card-juguetes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #0dc1ee;
-  margin: 1.5rem;
-  padding: 1.5rem;
-  width: 65%;
-  border-radius: 10px;
-  border: 2px solid #CCF8FB;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  margin: 3rem;
+}
+#section-juguetes #card-juguetes h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 #section-juguetes #card-juguetes .card-detalle-juguetes {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid #CCF8FB;
-  margin: 1rem;
-}
-#section-juguetes #card-juguetes .card-detalle-juguetes img {
-  width: 30%;
+  flex-wrap: wrap;
 }
 #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #CCF8FB;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 1rem;
+  margin: 1rem;
+  height: 25rem;
 }
-#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete h4 {
+#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-img-juguete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-img-juguete img {
+  width: 100%;
+  object-fit: scale-down;
+}
+#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-texto-juguete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-texto-juguete h4 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
 }
-#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p {
-  font-size: 1.2rem;
+#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-texto-juguete p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 #section-inicio {
@@ -206,53 +251,121 @@ nav button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 65%;
-  background-image: url("https://i.pinimg.com/474x/a1/86/78/a1867852dd54daa48ff8e8f375d235de.jpg");
-  font-family: "Acme", sans-serif;
-  color: #0dc1ee;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
   font-size: 2rem;
-  padding: 2.5rem;
   border-radius: 10px;
-  margin: 1.5rem;
-  box-shadow: 0 0 15px 0 #0dc1ee;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  animation-name: animacion;
+  animation-duration: 7s;
 }
 #section-inicio .card-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section-inicio .card-contenedor p {
+  font-size: 1.2rem;
+  width: 45%;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+#section-inicio .catalogo-contenedor {
+  margin-top: 6rem;
+}
+#section-inicio .catalogo-contenedor a {
+  text-decoration: none;
+}
+#section-inicio .promos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin-top: 10rem;
+}
+#section-inicio .promos .combos, #section-inicio .promos .ofertas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 10%;
+  padding: 4rem;
+  cursor: pointer;
+}
+#section-inicio .promos .combos i, #section-inicio .promos .ofertas i {
+  margin-bottom: 4rem;
+  font-size: 8rem;
+}
+#section-inicio .promos .combos:hover, #section-inicio .promos .ofertas:hover {
   background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
+  color: #8DD6F8;
 }
-#section-inicio .card-contenedor .card-integrantes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
 }
-#section-inicio .card-contenedor .card-integrantes h1 {
-  margin-top: 2rem;
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #3cbaf5;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
 }
-#section-inicio .card-contenedor .card-integrantes h4 {
-  font-weight: 200;
-  margin-top: 1rem;
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
-#section-inicio .card-contenedor .card-integrantes p {
-  margin-top: 2.5rem;
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
 }
-#section-inicio .card-contenedor .card-local {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.cta:hover:before {
+  width: 100%;
+  background: #3cbaf5;
 }
-#section-inicio .card-contenedor .card-local h1 {
-  margin-top: 4rem;
+
+.cta:hover svg {
+  transform: translateX(0);
 }
-#section-inicio .card-contenedor .card-local h4 {
-  font-weight: 200;
-  margin-top: 1rem;
+
+.cta:active {
+  transform: scale(0.95);
 }
-#section-inicio a {
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
+
+#section-combos, #section-ofertas {
+  display: none;
 }
 
 #section-ropa {
@@ -260,100 +373,68 @@ nav button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Acme", sans-serif;
-  color: #0dc1ee;
-  width: 65%;
-  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
   padding: 2.5rem;
   border-radius: 10px;
   margin: 1.5rem;
-  box-shadow: 0 0 15px 0 #0dc1ee;
+  box-shadow: 0 0 10px 0 #3cbaf5;
   display: none;
 }
-#section-ropa .ropa-logo {
-  width: 25%;
-}
 #section-ropa .card-principal {
-  background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
 }
-#section-ropa .card-principal h1 {
+#section-ropa .card-principal h2 {
   text-align: center;
-  margin-top: 1rem;
-  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
 }
-#section-ropa .card-principal h4 {
-  font-weight: 200;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
+#section-ropa .card-principal h2 a {
+  text-decoration: underline;
+  color: #ffffff;
 }
-#section-ropa .card-principal #card-ropa {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #0dc1ee;
-  margin: 1.5rem;
-  padding: 1.5rem;
-  width: 95%;
-  border-radius: 10px;
-  border: 2px solid #CCF8FB;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-#section-ropa .card-principal #card-ropa .card-detalle-ropa {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #CCF8FB;
-  margin: 1rem;
-}
-#section-ropa .card-principal #card-ropa .card-detalle-ropa img {
-  width: 30%;
-}
-#section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1.5rem;
-}
-#section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa h4 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-#section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p {
-  font-size: 1.2rem;
-}
-#section-ropa .card-principal .contacto-ropa {
+#section-ropa .card-principal .contenedor-contactos-ropa {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
 }
-#section-ropa .card-principal .contacto-ropa a {
-  font-size: 2rem;
+#section-ropa .card-principal .contenedor-contactos-ropa p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+#section-ropa .card-principal .contenedor-contactos-ropa .contenedor-redes-ropa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 8rem;
+}
+#section-ropa .card-principal .contenedor-contactos-ropa .contenedor-redes-ropa a {
+  text-decoration: none;
 }
 
-#section-envios {
+#section-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Acme", sans-serif;
-  color: #0dc1ee;
+  font-family: "Josefin Sans", sans-serif;
+  color: #8DD6F8;
   width: 65%;
   font-size: 2rem;
   padding: 2.5rem;
   border-radius: 10px;
   margin: 1.5rem;
-  box-shadow: 0 0 15px 0 #0dc1ee;
+  box-shadow: 0 0 15px 0 #8DD6F8;
   display: none;
 }
-#section-envios .card-envios-principal {
+#section-contacto .card-envios-principal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,39 +443,39 @@ nav button:hover {
   padding: 1rem;
   border-radius: 10px;
 }
-#section-envios .card-envios-principal h1 {
+#section-contacto .card-envios-principal h1 {
   text-align: center;
   margin-top: 1rem;
   font-size: 2rem;
 }
-#section-envios .card-envios-principal h4 {
+#section-contacto .card-envios-principal h4 {
   font-weight: 200;
 }
-#section-envios .card-envios-principal h3, #section-envios .card-envios-principal h4 {
+#section-contacto .card-envios-principal h3, #section-contacto .card-envios-principal h4 {
   margin-top: 1rem;
   font-size: 1.5rem;
   text-align: center;
 }
-#section-envios .card-envios-principal h3 {
+#section-contacto .card-envios-principal h3 {
   font-weight: "bold";
 }
-#section-envios .card-envios-principal img {
+#section-contacto .card-envios-principal img {
   width: 55%;
   margin-top: 1.5rem;
 }
-#section-envios .card-envios-principal #card-envios {
+#section-contacto .card-envios-principal #card-envios {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #0dc1ee;
+  color: #8DD6F8;
   margin: 1.5rem;
   padding: 1.5rem;
   width: 95%;
   border-radius: 10px;
   border: 2px solid #CCF8FB;
 }
-#section-envios .card-envios-principal #card-envios .detalle-envios {
+#section-contacto .card-envios-principal #card-envios .detalle-envios {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -404,480 +485,136 @@ nav button:hover {
   border-radius: 10px;
   margin: 1.5rem;
 }
-#section-envios .card-envios-principal #card-envios .detalle-envios h4 {
+#section-contacto .card-envios-principal #card-envios .detalle-envios h4 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-#section-envios .card-envios-principal #card-envios .detalle-envios ul {
+#section-contacto .card-envios-principal #card-envios .detalle-envios ul {
   list-style: none;
   font-size: 1.5rem;
 }
 
-#section-pagos {
+#section-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Acme", sans-serif;
-  color: #0dc1ee;
-  width: 65%;
-  font-size: 2rem;
-  padding: 2.5rem;
-  border-radius: 10px;
-  margin: 1.5rem;
-  box-shadow: 0 0 15px 0 #0dc1ee;
+  width: 80%;
   display: none;
 }
-#section-pagos .card-pagos-principal {
+#section-contacto h2 {
+  color: #ffffff;
+  font-size: 3rem;
+}
+#section-contacto .card-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 5rem;
+}
+#section-contacto .card-contacto .contacto-texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
-}
-#section-pagos .card-pagos-principal h1 {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 2rem;
-}
-#section-pagos .card-pagos-principal #card-pagos {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
-  color: #0dc1ee;
-  margin: 1.5rem;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 2px solid #CCF8FB;
 }
-#section-pagos .card-pagos-principal #card-pagos .detalle-pagos {
+#section-contacto .card-contacto .contacto-texto p, #section-contacto .card-contacto .contacto-texto a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+#section-contacto .card-contacto .contacto-texto a span {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 1rem;
-  border: 1px solid #CCF8FB;
-  border-radius: 10px;
-  margin: 1.5rem;
 }
-#section-pagos .card-pagos-principal #card-pagos .detalle-pagos h4 {
-  font-size: 2rem;
+#section-contacto .card-contacto .contacto-texto a span p {
   margin-left: 1rem;
-  font-weight: 200;
 }
-#section-pagos .card-pagos-principal #card-pagos .detalle-pagos img {
-  width: 20%;
+#section-contacto .card-contacto .contacto-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#section-contacto .card-contacto .contacto-form label {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+}
+#section-contacto .card-contacto .contacto-form input, #section-contacto .card-contacto .contacto-form textarea {
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 0.5rem;
+  width: 90%;
+}
+#section-contacto .card-contacto .contacto-form input {
+  height: 20px;
+}
+#section-contacto .card-contacto .contacto-form input:focus, #section-contacto .card-contacto .contacto-form textarea:focus {
+  outline: none;
+}
+#section-contacto .card-contacto .contacto-form .enviar {
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #8DD6F8;
+  border: none;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+#section-contacto .card-contacto .contacto-form .enviar:hover {
+  background-color: #8DD6F8;
+  color: #ffffff;
 }
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #ffffff;
   width: 100vw;
-  font-family: "Acme", sans-serif;
-  color: #0dc1ee;
-  padding: 2rem;
-  font-size: 1.5rem;
-}
-footer h1 {
-  margin-bottom: 1rem;
-}
-footer .redes {
-  margin-top: 2.5rem;
-}
-footer .redes a {
+  background-color: #3cbaf5;
   color: #ffffff;
-  background-color: #0dc1ee;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  animation-name: animacion;
+  animation-duration: 5s;
+  padding: 1rem 0;
+}
+footer .contenedor-contacto, footer .contenedor-conectados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer .contenedor-contacto h4, footer .contenedor-conectados h4 {
+  margin-bottom: 1rem;
   font-size: 1.5rem;
 }
-footer .redes a:link {
+footer .contenedor-contacto a, footer .contenedor-conectados a {
   text-decoration: none;
+  color: #ffffff;
 }
-footer .redes a:hover {
-  color: #0dc1ee;
-  background-color: #ffffff;
+footer .contenedor-contacto a span p, footer .contenedor-conectados a span p {
+  margin-left: 0.5rem;
+}
+footer .contenedor-contacto a span, footer .contenedor-conectados a span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
-@media screen and (max-width: 2560px) {
-  nav button {
-    font-size: 3rem;
-  }
-
-  #section-inicio .card-contenedor .card-integrantes h1, #section-inicio .card-contenedor .card-integrantes a {
-    font-size: 3rem;
-  }
-  #section-inicio .card-contenedor .card-integrantes h4 {
-    font-size: 2.5rem;
-  }
-
-  #section-paniales h1 {
-    font-size: 3rem;
-  }
-  #section-paniales .botones button img {
-    width: 7rem;
-  }
-  #section-paniales .card-detalle {
-    margin-top: 1.5rem;
-  }
-  #section-paniales .card-detalle .detalle h4 {
-    font-size: 2.5rem;
-  }
-  #section-paniales .card-detalle .detalle p {
-    font-size: 2rem;
-  }
-  #section-paniales .card-detalle .detalle .talles li {
-    font-size: 2rem;
-  }
-
-  #section-juguetes h1 {
-    font-size: 3rem;
-  }
-  #section-juguetes #card-juguetes h2 {
-    font-size: 2.5rem;
-  }
-
-  #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete h4 {
-    font-size: 2.5rem;
-  }
-  #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p {
-    font-size: 2rem;
-  }
-
-  #section-ropa .card-principal h1 {
-    font-size: 3rem;
-  }
-  #section-ropa .card-principal h4 {
-    font-size: 2.5rem;
-  }
-  #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa h4 {
-    font-size: 2.5rem;
-  }
-  #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p {
-    font-size: 2rem;
-  }
-  #section-ropa .card-principal .contacto-ropa {
-    margin-top: 2.5rem;
-  }
-
-  #section-envios .card-envios-principal h1 {
-    font-size: 3rem;
-  }
-  #section-envios .card-envios-principal h4, #section-envios .card-envios-principal h3 {
-    font-size: 2.5rem;
-  }
-  #section-envios .card-envios-principal #card-envios .detalle-envios h4 {
-    font-size: 2.5rem;
-  }
-  #section-envios .card-envios-principal #card-envios .detalle-envios li {
-    font-size: 2rem;
-  }
-
-  #section-pagos .card-pagos-principal h1 {
-    font-size: 3rem;
-  }
-  #section-pagos .card-pagos-principal #card-pagos .detalle-pagos h4 {
-    font-size: 2.5rem;
-  }
-
-  footer h1 {
-    font-size: 3rem;
-  }
-  footer .redes a:link {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 1440px) {
-  header img {
-    height: 20vh;
-  }
-
-  footer .div-follow h3, footer .div-visit h3, footer .div-visit a, footer .div-follow a, a {
-    font-size: 2.3rem;
-  }
-
-  #section-paniales .card-detalle .detalle p, #section-paniales .card-detalle .detalle .talles li {
-    font-size: 1.7rem;
-  }
-
-  #section-paniales .card-detalle img {
-    margin-right: 2rem;
-  }
-
-  #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p {
-    font-size: 1.7rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  header img {
-    height: 13vh;
-  }
-
-  nav button {
-    font-size: 2rem;
-  }
-
-  #section-paniales .botones button img {
-    width: 5rem;
-  }
-
-  #section-paniales .card-detalle .detalle p, #section-paniales .card-detalle .detalle .talles li,
-#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p,
-#section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p {
-    font-size: 1.5rem;
-  }
-
-  #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p {
-    text-align: center;
-  }
-
-  #section-envios .card-envios-principal h4, #section-envios .card-envios-principal h3,
-#section-ropa .card-principal h4 {
-    font-size: 2rem;
-  }
-
-  #section-envios .card-envios-principal #card-envios .detalle-envios li {
-    font-size: 1.7rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  header img {
-    width: 30vw;
-    height: 10vh;
-  }
-
-  nav button, #section-inicio .card-contenedor .card-integrantes h4,
-#section-inicio .card-contenedor .card-local h4,
-#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete h4 {
-    font-size: 1rem;
-  }
-
-  #section-inicio .card-contenedor .card-integrantes h1,
-#section-inicio .card-contenedor .card-integrantes a,
-#section-inicio .card-contenedor .card-local h1,
-#section-paniales .card-detalle .detalle h4,
-#section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa h4,
-#section-inicio a {
-    font-size: 1rem;
-  }
-
-  #section-inicio .card-contenedor .card-local h1 {
-    margin-top: 1.5rem;
-  }
-
-  #section-inicio {
-    padding: 1.5rem;
-  }
-
-  #section-paniales .botones button img {
-    width: 3rem;
-  }
-
-  #section-paniales h1,
-footer h1,
-#section-paniales #card-paniales-pampers h2,
-#section-paniales #card-paniales-huggies h2,
-#section-paniales #card-paniales-babysec h2,
-#section-paniales #card-paniales-estrella h2,
-#section-paniales #card-paniales-duffy h2,
-#section-paniales #card-paniales-caricias h2,
-#section-juguetes h1,
-#section-juguetes #card-juguetes h2,
-#section-ropa .card-principal h1,
-#section-envios .card-envios-principal h4,
-#section-envios .card-envios-principal h3,
-#section-ropa .card-principal h4,
-#section-ropa .card-principal .contacto-ropa a,
-#section-envios .card-envios-principal h1,
-#section-envios .card-envios-principal h4,
-#section-envios .card-envios-principal h3,
-#section-envios .card-envios-principal #card-envios .detalle-envios h4,
-#section-pagos .card-pagos-principal h1,
-#section-pagos .card-pagos-principal #card-pagos .detalle-pagos h4,
-footer .redes a:link {
-    font-size: 1.5rem;
-  }
-
-  #section-paniales .card-detalle .detalle p, #section-paniales .card-detalle .detalle p,
-#section-paniales .card-detalle .detalle .talles li,
-#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p,
-#section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p,
-#section-envios .card-envios-principal #card-envios .detalle-envios li {
-    font-size: 1rem;
-  }
-
-  #section-juguetes h1,
-#section-juguetes #card-juguetes {
-    margin: 1rem;
-  }
-
-  #section-envios .card-envios-principal #card-envios,
-#section-envios .card-envios-principal #card-envios .detalle-envios {
-    padding: 0.5rem;
-  }
-
-  #section-envios {
-    padding: 1rem;
-  }
-}
-@media screen and (max-width: 425px) {
-  header img {
-    width: 50vw;
-    height: 40vh;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0.2rem;
-  }
-
-  footer .redes a:link {
-    font-size: 0.7rem;
-  }
-
-  #section-pagos .card-pagos-principal #card-pagos .detalle-pagos h4 {
-    font-size: 1rem;
-  }
-
-  footer .redes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  footer .redes a {
-    padding: 0.5rem;
-  }
-
-  #section-inicio a,
-#section-inicio .card-contenedor .card-integrantes a {
-    font-size: 0.7rem;
-  }
-
-  #section-paniales .botones {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  #section-paniales .card-detalle .detalle p,
-#section-paniales .card-detalle .detalle p,
-#section-paniales .card-detalle .detalle .talles li,
-#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p,
-#section-ropa .card-principal h4,
-#section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p,
-#section-ropa .card-principal .contacto-ropa a,
-#section-envios .card-envios-principal #card-envios .detalle-envios li {
-    font-size: 0.5rem;
-  }
-
-  #section-envios .card-envios-principal h4,
-#section-envios .card-envios-principal h3,
-#section-envios .card-envios-principal #card-envios .detalle-envios h4 {
-    font-size: 1rem;
-  }
-
-  #section-paniales .card-detalle,
-#section-paniales .card-detalle .detalle,
-#section-ropa .card-principal #card-ropa .card-detalle-ropa,
-#section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa h4 {
-    margin: 0.5rem;
-  }
-
-  #section-paniales .card-detalle img {
-    margin: 0.2rem;
-  }
-
-  #section-paniales #card-paniales-pampers,
-#section-paniales #card-paniales-huggies,
-#section-paniales #card-paniales-babysec,
-#section-paniales #card-paniales-estrella,
-#section-paniales #card-paniales-duffy,
-#section-paniales #card-paniales-caricias,
-#section-paniales ul,
-#section-juguetes #card-juguetes,
-#section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p,
-#section-ropa .card-principal #card-ropa {
-    padding: 0.5rem;
-  }
-
-  #section-paniales .card-detalle .detalle .talles {
-    margin-top: 0.5rem;
-  }
-
-  #section-juguetes #card-juguetes h2 {
-    text-align: center;
-  }
-
-  #section-ropa .card-principal h4 {
-    font-size: 0.7rem;
-  }
-
-  #section-ropa .card-principal #card-ropa .card-detalle-ropa,
-#section-envios .card-envios-principal #card-envios,
-#section-pagos .card-pagos-principal #card-pagos {
-    padding: 0.2rem;
-  }
-
-  #section-ropa .card-principal #card-ropa,
-#section-pagos .card-pagos-principal #card-pagos {
-    margin: 0;
-    margin-top: 0.5rem;
-  }
-
-  #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa,
-#section-envios .card-envios-principal #card-envios .detalle-envios,
-#section-envios .card-envios-principal #card-envios .detalle-envios h4 {
-    margin: 0.2rem;
-  }
-
-  #section-envios .card-envios-principal #card-envios .detalle-envios ul {
-    padding-left: 0rem;
-  }
-
-  #section-ropa, #section-pagos {
-    padding: 1rem;
-  }
-
-  #section-envios .card-envios-principal #card-envios {
-    margin: 0;
-    margin-top: 1rem;
-  }
-
-  #section-pagos .card-pagos-principal #card-pagos .detalle-pagos {
-    margin: 1rem;
-  }
-
-  #section-pagos .card-pagos-principal h1 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
-}
-@media screen and (max-width: 375px) {
-  header img {
-    height: 35vh;
-  }
-
-  #section-pagos .card-pagos-principal #card-pagos .detalle-pagos {
-    margin: 0.5rem;
-  }
-}
-@media screen and (max-width: 320px) {
-  footer h1 {
-    text-align: center;
-  }
-
-  #section-paniales #card-paniales-pampers, #section-paniales #card-paniales-huggies, #section-paniales #card-paniales-babysec, #section-paniales #card-paniales-estrella, #section-paniales #card-paniales-duffy, #section-paniales #card-paniales-caricias, #section-paniales ul, #section-juguetes #card-juguetes, #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p, #section-ropa .card-principal #card-ropa {
-    padding: 0.1rem;
-  }
-}
 * {
   margin: 0;
   box-sizing: border-box;

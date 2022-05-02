@@ -1,89 +1,71 @@
 #section-paniales{
-    @include flex($direction:column, $content:center);
+    @include flex ($direction:column, $justify:center, $align:center);
     font-family: $typography;
-    color: $colorPrincipal;
-    margin: $espacioXL $espacioM;
-    font-size: $sizeL;
-    h1{
-        margin: $espacioM;
-    }
+    margin-top: $espacioL;
     .botones{
-    @include flex($direction:row, $content:center);
+        @include flex ($direction:column, $justify:center, $align:center);
+        flex-wrap: wrap;
+        width: 80%;
         button{
             background-color: $colorSecundario;
-            color: $colorSecundario;
-            border: 1px solid #CCF8FB;
-            font-family: $typography;
-            padding: $espacioS;
-            margin: $espacioS;
-            font-size: $sizeM;
+            color: $colorPrincipal;
+            border: none;
+            padding: $espacioS $espacioXS;
+            margin: $espacioXS;
+            font-size: $sizeS;
+            font-weight: bold;
             border-radius: $borderRadius;
-            img{
-                width: 5rem;
-            }
+            width: 8rem;
+            cursor: pointer;
         }
         button:hover{
             background-color: $colorPrincipal;
-            color: $colorPrincipal;
+            color: $colorSecundario;
         }
     }
-    #card-paniales-pampers,  #card-paniales-huggies,  
-    #card-paniales-babysec,  #card-paniales-estrella,  
-    #card-paniales-duffy, #card-paniales-caricias{
-        @include flex($direction:column, $content:center);
-        color:$colorPrincipal;
-        margin: $espacioM;
-        padding: $espacioM;
-        width: 65%;
-        border-radius: $borderRadius;
-        border: 2px solid #CCF8FB;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    }
-    .card-detalle{
-        @include flex($direction:row, $content:center);
-        border: 1px solid #CCF8FB;
-        margin: $espacioS;
-        img{
-            width: 30%;
-        }
-        .detalle{
-            @include flex($direction:column, $content:center);
-            margin: $espacioM;
-            h4{
-                font-size: $sizeM;
-                margin-bottom: $espacioS;
-            }
-            p, li{
-                font-size: 1.2rem;
-            }
-            .talles{
-                @include flex($direction:row, $content:center);
-                margin-top: $espacioM;
-                li{
-                    list-style: none;
+    #card-paniales-pampers,
+    #card-paniales-huggies,
+    #card-paniales-babysec,
+    #card-paniales-estrella,
+    #card-paniales-duffy,
+    #card-paniales-caricias{
+        @include flex ($direction:column, $justify:center, $align:center);
+        color:$colorSecundario;
+        margin: $espacioXXL;
+        .contenedor-paniales{
+            @include flex ($direction:row, $justify:center, $align:center);
+            flex-wrap: wrap;
+            .card-paniales{
+                @include flex ($direction:column, $justify:center, $align:center);
+                border-radius: $borderRadius;
+                border: 2px solid #CCF8FB;
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+                width: 30%;
+                padding: $espacioXS;
+                margin: $espacioS;
+                .contenedor-img{
+                    width: 30%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .contenedor-texto{
+                    @include flex ($direction:column, $justify:center, $align:center);
+                    h4{
+                        font-size: $sizeM;
+                        padding-top: $espacioM;
+                        padding-bottom: $espacioXS;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: $sizeS;
+                        line-height: 1.5;
+                        text-align: center;
+                    }
                 }
             }
         }
-        
     }
     display: none;
 }
 
-#card-paniales-pampers,  #card-paniales-huggies,  
-#card-paniales-babysec,  #card-paniales-estrella,  
-#card-paniales-duffy, #card-paniales-caricias{
-    display: none;
-}
-
-.boton-volver-atras{
-    border-radius: $borderRadius;
-    border: 1px solid #CCF8FB;
-    background-color: $colorPrincipal;
-    color: $colorSecundario;
-    padding: $espacioM;
-    margin: $espacioM;
-}
-.boton-volver-atras:hover{
-    background-color: $colorSecundario;
-    color: $colorPrincipal;
-}

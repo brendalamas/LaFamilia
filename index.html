@@ -7,654 +7,781 @@
     <title>Pañalera La Familia</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Dongle:wght@300;400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Courier+Prime:wght@400;700&family=Dongle:wght@300;400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/35cd8eb970.js" crossorigin="anonymous">
     </script>
 </head>
 <body>
     <header>
-        <img src="./img/principal.jpeg" alt="Pañalera La Familia">
+        <div class="contenedor-logo">
+            <img src="./img/principal.png" alt="Pañalera La Familia">
+        </div>
+        <div>
+            <button id="inicio">Inicio</button>
+            <button id="paniales">Pañales</button>
+            <button id="juguetes">Juguetes</button>
+            <button id="ropa">Ropa</button>
+            <button id="contacto">Contacto</button>
+        </div>
     </header>
-
-    <nav>
-        <button id="inicio">Inicio</button>
-        <button id="paniales">Pañales</button>
-        <button id="juguetes">Juguetes</button>
-        <button id="ropa">Ropa</button>
-        <button id="envios">Envios</button>
-        <button id="pagos">Met. Pagos</button>
-    </nav>
 
     <section id="section-inicio">
         <div class="card-contenedor">
-            <div class="card-integrantes">
-                <h1>BIENVENIDOS A PAÑALERA LA FAMILIA</h1>
-                <h4>Emprendimiento inagurado en septiembre del 2020</h4>
-                <h4>Integrantes: 👵🏼🧔🏽👩🏻👩🏻🤱🏻</h4>
-                <a href="https://wa.me/c/5491127299721">➡️ Accedé al catalogo ⬅️</a>
+            <h1>¡BIENVENIDOS!</h1>
+            <p>
+                Somos un pequeño emprendimiento que surgio a raiz de una idea en medio de la pandemia,
+                y logramos poder abrir el local en septiembre del 2020! 
+            </p>
+            <p>
+                Muy felices por la iniciativa, y por el apoyo de nuestros clientes.
+            </p>
+            <p>
+                ¡Esperamos siempre poder brindar el mejor servicio!
+            </p>
+        </div>
+        <div class="catalogo-contenedor">
+            <a href="https://wa.me/c/5491127299721" target="blank" class="cta">
+                <span>Catalogo</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </a>
+        </div>
+        <div class="promos">
+            <div class="combos">
+                <i class="fas fa-bullhorn"></i>
+                <p>COMBOS</p>
             </div>
-            <div class="card-local">
-                <h1>¡VENI AL LOCAL!</h1>
-                <h4> <span><i class="fas fa-map-marked-alt"></i></span> Santo Domingo 3800, Nueva Pompeya. CABA</h4>
-                <a href="https://www.google.com.ar/maps/place/Pa%C3%B1alera+La+Familia/@-34.6544902,-58.4027996,19z/data=!4m5!3m4!1s0x0:0x9a8ead4fa02910c3!8m2!3d-34.6544902!4d-58.4024128">➡️ Accedé a la ubicacion ⬅️</a>
+            <div class="ofertas">
+                <i class="fas fa-dollar-sign"></i>
+                <p>OFERTAS</p>
             </div>
         </div>
     </section>
+    <section id="section-combos">
+        <p>combos</p>
+    </section>
+
+    <section id="section-ofertas">
+        <p>ofertas</p>
+    </section>
 
     <section id="section-paniales">
-        <h1>PAÑALES</h1>
         <div class="botones">
-            <button id="pampers"><img src="https://yt3.ggpht.com/LzgsGBmI4x0DOyBm3FR5hgJJjmWxpKMmSRj-mfOO3rWWAiKdKSo9kgZIxps25KORsTvwNd7yOg=s900-c-k-c0x00ffffff-no-rj" alt="logo pampers"></button>
-            <button id="huggies"><img src="https://logos-marcas.com/wp-content/uploads/2021/07/Huggies-Emblema.jpg" alt="logo huggies"></button>
-            <button id="babysec"><img src="https://www.hipermania.com.ar/wp-content/uploads/2019/05/babysec-logo-1.png" alt="logo babysec"></button>
-            <button id="estrella"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr2HQ3Hg0muQxFI4SOtZ07E91uQ4yRIn9fjCsXM2g_5AZrccjrA-AXDgjH6dJ_q5x0PQ&usqp=CAU" alt="logo estrella"></button>
-            <button id="duffy"><img src="https://duffy.com.ar/wp-content/uploads/layerslider/Duffy-Premium-Cotton-Header/Duffy_home-Logo-420x320-1.png" alt="logo duffy cotton"></button>
-            <button id="caricias"><img src="https://upamayorista.com.ar/wp-content/uploads/2020/10/6000_1-1.jpg" alt="logo caricias"></button>
+            <button id="pampers">
+                PAMPERS
+            </button>
+            <button id="huggies">
+                HUGGIES
+            </button>
+            <button id="babysec">
+                BABYSEC
+            </button>
+            <button id="estrella">
+                ESTRELLA
+            </button>
+            <button id="duffy">
+                DUFFY
+            </button>
+            <button id="caricias">
+                CARICIAS
+            </button>
         </div>
-
         <div id="card-paniales-pampers">
-            <h2>PAMPERS</h2>
-
-            <div class="card-detalle">
-                <img src="./img/supersec.png" alt="pampers supersec">
-
-                <div class="detalle">
-                    <h4>Pampers Supersec</h4>
-                    <p>
-                        1 Pampers Supersec mantiene a tu bebe más sequito que otros pañales* por 1 noche entera, 
-                        porque solo Pampers Supersec tiene exclusivos canales extra absorbentes, que distribuyen 
-                        el pipí uniformemente y evitan que entre en contacto con la piel de tu bebe. Así lo cambias 
-                        menos y ahorras más.
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+            <div class="contenedor-paniales">
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/016/311/products/supersec-xxgx54c1-fa2672dc5adc682a5716077214463562-1024-10241-51e9ac17561089bb1816176559998325-640-0.jpg" alt="pampers supersec">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Super sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$1440</h4>
+                    </div>
                 </div>
-                
-            </div>
-            <div class="card-detalle">
-                <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/180844-1000-1000/Panales-Pampers-Confort-Sec-Max-Extra-Extra-Grande-54-u.jpg?v=637485086315200000" alt="pampers confort sec">
-                <div class="detalle">
-                    <h4>Pampers ConfortSec</h4>
-                    <p>
-                        Hasta 2 veces más seco, y no cuelga. Extra Sec Pods que distribuyen uniformemente el pipi, 
-                        evitando que el pañal cuelgue. Gel Mágico que absorbe y retiene la humedad en el interior del pañal 
-                        para noches más sequitas. Capa ultra absorbente que absorbe rápidamente la humedad manteniéndola alejada 
-                        de la piel de tu bebé. Barreras Anti derrames que se adaptan suavemente alrededor de las piernas de tu bebé. 
-                        Ajuste cómodo y flexible para darle una protección anti derrames todas las noches.
-                    </p>
-                    
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/180844-1000-1000/Panales-Pampers-Confort-Sec-Max-Extra-Extra-Grande-54-u.jpg?v=637485086315200000" alt="pampers confortsec">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2100</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle">
-                <img src="https://www.facilshops.com/static/stores/s1112_jv41/images/products/xl/pampers-premium-care-xxg-x54_84705.jpg" alt="pampers premium">
-                <div class="detalle">
-                    <h4>Pampers Premium</h4>
-                    <p>
-                        Increíble sistema de absorción que ofrece hasta 12 horas de sueño sequito. 
-                        Exclusiva loción hipoalergénica: ayuda a prevenir irritaciones. Suave como algodón: la más suave protección de Pampers. 
-                        Canales de aire: para una piel aireada y sequita. 
-                        Ajuste cómodo y flexible: se estiran y se adaptan a los movimientos de tu bebé. 
-                        Barreras anti-derrames. Nuevos diseños lindos y divertidos.
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://cf.shopee.com.ar/file/97a4fb36e8b2204375aa4ee6dab77467" alt="premium care">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Premium care pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2400</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_842175-MLA43705541948_102020-O.jpg" alt="supersec pequeño">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Super sec pequeño</h4>
+                        <p>30 unidades</p>
+                        <h4>$500</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/175022-1000-1000/Pampers-Confort-Sec-Panales-Pequeno-X-56-Unidades.jpg?v=637396000520430000" alt="confort pequeño">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pequeño</h4>
+                        <p>56 unidades</p>
+                        <h4>$1400</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_976495-MLA32105008992_092019-O.jpg" alt="confort sec recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec recien nacido</h4>
+                        <p>56 unidades</p>
+                        <h4>$1600</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/808/715/products/pampers-recien-nacido-confort-sec-x-36-unidades-3-a-6kgs-d_nq_np_819442-mla28351246128_102018-f1-91783c9f166c7321bc15464714952832-480-0.jpg" alt="confort sec recien nacido ">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec recien nacido</h4>
+                        <p>36 unidades</p>
+                        <h4>$1090</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/172210-1000-1000/Pampers-Panales-Premium-Care-Recien-Nacido-X-36-Unidades.jpg?v=637323441367930000" alt="premium care recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Premium care recien nacido</h4>
+                        <p>36 unidades</p>
+                        <h4>$1300</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/0452e751deed967a6d93400721231cf2eefa73151f1c268e3666f13e4b1af12065789.png" alt="premium care recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Premium care recien nacido</h4>
+                        <p>56 unidades</p>
+                        <h4>$1880</h4>
+                    </div>
                 </div>
             </div>
         </div>
-
         <div id="card-paniales-huggies">
-            <h2>HUGGIES</h2>
-
-            <div class="card-detalle">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_998639-MLA40068922389_122019-O.jpg" alt="huggies triple proteccion">
-
-                <div class="detalle">
-                    <h4>Huggies Triple Proteccion</h4>
-                    <p>
-                        Huggies® Triple protección Nuevo y Mejorado! Ahora con más absorción, protege a tu bebé por mas tiempo*. 
-                        Ofrece 3 beneficios en 1: absorción, sequedad y sistema antifiltraciones. Además, el pañal viene con 
-                        entretenidos diseños de animalitos!
-                        *vs Versión Anterior.
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+            <div class="contenedor-paniales">
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/016/311/products/supersec-xxgx54c1-fa2672dc5adc682a5716077214463562-1024-10241-51e9ac17561089bb1816176559998325-640-0.jpg" alt="pampers supersec">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Super sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$1440</h4>
+                    </div>
                 </div>
-                
-            </div>
-            <div class="card-detalle">
-                <img src="https://www.xn--paaleraelcastilloazul-dbc.com/web/wp-content/uploads/2016/04/13-e1617220957473.png" alt="huggies supreme care">
-                <div class="detalle">
-                    <h4>Huggies Supreme Care</h4>
-                    <p>
-                        El nuevo Huggies® Supreme Care Cuidado Natural para su delicada piel tiene la máxima protección de Huggies: hecho con fibras naturales, 
-                        0% fragancia y parabenos, ofreciendo máxima sequedad y suavidad tipo algodón, que lo hace especial para la delicada piel de tu bebé. 
-                        Tiene la nueva Tecnologia Xtra-Care con canales suaves respirables y cuenta con divertidos diseños de Winnie The Pooh y sus amigos.
-                    </p>
-                    
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/180844-1000-1000/Panales-Pampers-Confort-Sec-Max-Extra-Extra-Grande-54-u.jpg?v=637485086315200000" alt="pampers confortsec">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2100</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_988139-MLA46273600352_062021-V.jpg" alt="huggies protect plus">
-                <div class="detalle">
-                    <h4>Huggies Protect Plus</h4>
-                    <p>
-                        El nuevo Huggies® Protect Plus tiene burbujitas que absorben la caquita liquida, 
-                        posee gel super absorbente y mejores barreras anti filtraciones que mantienen a 
-                        tu bebé 3 veces más seco* por más tiempo. ¡Además, viene con divertidos diseños 
-                        de Mickey y sus amigos!*vs Huggies Triple Protección.
-
-
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://cf.shopee.com.ar/file/97a4fb36e8b2204375aa4ee6dab77467" alt="premium care">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Premium care pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2400</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle">
-                <img src="https://iaruchisbebe.com.ar/productos/1596057953/photos/prin_1619195046.jpg" alt="huggies flexi confort">
-                <div class="detalle">
-                    <h4>Huggies Flexi Confort</h4>
-                    <p>
-                        Pañales Huggies® Flexi Comfort le dan a tu bebé una absorción mejorada para caquita 
-                        líquida, brindando una Protección total y comfort. Esta dermatológicamente comprobado 
-                        y cuenta con cintura y barreras elásticas. Ahora con nuevos y dievertidos diseños de Mickey y Minnie.
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_842175-MLA43705541948_102020-O.jpg" alt="supersec pequeño">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Super sec pequeño</h4>
+                        <p>30 unidades</p>
+                        <h4>$500</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/175022-1000-1000/Pampers-Confort-Sec-Panales-Pequeno-X-56-Unidades.jpg?v=637396000520430000" alt="confort pequeño">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pequeño</h4>
+                        <p>56 unidades</p>
+                        <h4>$1400</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_976495-MLA32105008992_092019-O.jpg" alt="confort sec recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec recien nacido</h4>
+                        <p>56 unidades</p>
+                        <h4>$1600</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/808/715/products/pampers-recien-nacido-confort-sec-x-36-unidades-3-a-6kgs-d_nq_np_819442-mla28351246128_102018-f1-91783c9f166c7321bc15464714952832-480-0.jpg" alt="confort sec recien nacido ">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec recien nacido</h4>
+                        <p>36 unidades</p>
+                        <h4>$1090</h4>
+                    </div>
                 </div>
             </div>
-            
         </div>
-        
         <div id="card-paniales-babysec">
-            <h2>BABYSEC</h2>
-
-            <div class="card-detalle">
-                <img src="https://upamayorista.com.ar/wp-content/uploads/2020/10/13469_1-1.jpg" alt="babysec premium">
-
-                <div class="detalle">
-                    <h4>Babysec Premium</h4>
-                    <p>
-                        Los pañales Babysec Premium Flexi Protect, te ofrece el mejor ajuste y comodidad para tu bebé con hasta 12 horas de absorción.
-                        Son más flexibles.Tienen doble oreja. La oreja trasera es elastizada. Posee cintura más alta y ancha.
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+            <div class="contenedor-paniales">
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/016/311/products/supersec-xxgx54c1-fa2672dc5adc682a5716077214463562-1024-10241-51e9ac17561089bb1816176559998325-640-0.jpg" alt="pampers supersec">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Super sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$1440</h4>
+                    </div>
                 </div>
-                
-            </div>
-            <div class="card-detalle">
-                <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/120/638/products/babysec-super-pack-xg-11-8737272a03d4b4552616264689351006-640-0.png" alt="babysec ultrasec">
-                <div class="detalle">
-                    <h4>Babysec ultrasec</h4>
-                    <p>
-                        Cintas reajustables, tipo abrojito. Pañal con formato tanga. Suave cubierta con divertidos dibujos. Máxima absorción.
-                        Cintura elastizada. Barreras.
-                    </p>
-                    
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/180844-1000-1000/Panales-Pampers-Confort-Sec-Max-Extra-Extra-Grande-54-u.jpg?v=637485086315200000" alt="pampers confortsec">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2100</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle">
-                <img src="https://cdn.shopify.com/s/files/1/0571/8052/0615/products/BABYSEC-SUPER-PREMIUM-XXG-112.jpg?v=1622810388" alt="babysec super premium">
-                <div class="detalle">
-                    <h4>Babysec Super Premium</h4>
-                    <p>
-                        Babysec Premium Pañal suave con cubierta tipo tela, 
-                        ¡súper absorbente! Sus cintas son reajustables y tiene cintura elástica. 
-                        Ahora con barreras más altas y cintura elástica que brindan un mejor ajuste; 
-                        además cuenta con oreja delantera para una mayor protección a la piel de tu bebé.
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://cf.shopee.com.ar/file/97a4fb36e8b2204375aa4ee6dab77467" alt="premium care">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Premium care pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2400</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_842175-MLA43705541948_102020-O.jpg" alt="supersec pequeño">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Super sec pequeño</h4>
+                        <p>30 unidades</p>
+                        <h4>$500</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/175022-1000-1000/Pampers-Confort-Sec-Panales-Pequeno-X-56-Unidades.jpg?v=637396000520430000" alt="confort pequeño">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pequeño</h4>
+                        <p>56 unidades</p>
+                        <h4>$1400</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_976495-MLA32105008992_092019-O.jpg" alt="confort sec recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec recien nacido</h4>
+                        <p>56 unidades</p>
+                        <h4>$1600</h4>
+                    </div>
                 </div>
             </div>
         </div>
-
         <div id="card-paniales-estrella">
-            <h2>ESTRELLA</h2>
-
-            <div class="card-detalle">
-                <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/139/588/products/estrellapanales21-3b99722ef8d34b9fb815122830671390-640-0.jpg" alt="estrella baby">
-
-                <div class="detalle">
-                    <h4>Estrella Baby</h4>
-                    <p>
-                        Pañal para noches más sequitas, una capa ultra absorbente que absorbe rápidamente la 
-                        humedad manteniéndola alejada de la piel de tu bebé y barreras antiderrames que se 
-                        adaptan suavemente alrededor de las piernas de tu bebé, un ajuste cómodo y flexible para darle hasta 12 horas de protección.
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+            <div class="contenedor-paniales">
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://cf.shopee.com.ar/file/97a4fb36e8b2204375aa4ee6dab77467" alt="premium care">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Premium care pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2400</h4>
+                    </div>
                 </div>
-                
-            </div>
-            <div class="card-detalle">
-                <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/206/826/products/estrella-xg-x581-487114a65c3df3caef15990117366030-1024-1024.jpg" alt="estrella baby pack ahorro">
-                <div class="detalle">
-                    <h4>Estrella Baby Pack Ahorro</h4>
-                    <p>
-                        Pañal para noches más sequitas, una capa ultra absorbente que absorbe rápidamente la 
-                        humedad manteniéndola alejada de la piel de tu bebé y barreras antiderrames que se 
-                        adaptan suavemente alrededor de las piernas de tu bebé, un ajuste cómodo y flexible para darle hasta 12 horas de protección.
-                    </p>
-                    
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_842175-MLA43705541948_102020-O.jpg" alt="supersec pequeño">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Super sec pequeño</h4>
+                        <p>30 unidades</p>
+                        <h4>$500</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle">
-                <img src="https://www.xn--paalesoeste-2db.com.ar/wp-content/uploads/2020/06/estrella-baby-junior-x30.jpg" alt="estrella junior">
-                <div class="detalle">
-                    <h4>Estrella Baby Pack Ahorro Junior</h4>
-                    <p>
-                        Pañal para noches más sequitas, una capa ultra absorbente que absorbe rápidamente la 
-                        humedad manteniéndola alejada de la piel de tu bebé y barreras antiderrames que se 
-                        adaptan suavemente alrededor de las piernas de tu bebé, un ajuste cómodo y flexible 
-                        para darle hasta 12 horas de protección.
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/175022-1000-1000/Pampers-Confort-Sec-Panales-Pequeno-X-56-Unidades.jpg?v=637396000520430000" alt="confort pequeño">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pequeño</h4>
+                        <p>56 unidades</p>
+                        <h4>$1400</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_976495-MLA32105008992_092019-O.jpg" alt="confort sec recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec recien nacido</h4>
+                        <p>56 unidades</p>
+                        <h4>$1600</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/808/715/products/pampers-recien-nacido-confort-sec-x-36-unidades-3-a-6kgs-d_nq_np_819442-mla28351246128_102018-f1-91783c9f166c7321bc15464714952832-480-0.jpg" alt="confort sec recien nacido ">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec recien nacido</h4>
+                        <p>36 unidades</p>
+                        <h4>$1090</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/172210-1000-1000/Pampers-Panales-Premium-Care-Recien-Nacido-X-36-Unidades.jpg?v=637323441367930000" alt="premium care recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Premium care recien nacido</h4>
+                        <p>36 unidades</p>
+                        <h4>$1300</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/0452e751deed967a6d93400721231cf2eefa73151f1c268e3666f13e4b1af12065789.png" alt="premium care recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Premium care recien nacido</h4>
+                        <p>56 unidades</p>
+                        <h4>$1880</h4>
+                    </div>
                 </div>
             </div>
         </div>
-
         <div id="card-paniales-duffy">
-            <h2>DUFFY COTTON</h2>
-
-            <div class="card-detalle">
-                <img src="https://i2.wp.com/www.mundonuevo.com.ar/wp-content/uploads/2021/05/D_NQ_NP_831129-MLA44923667117_022021-O.jpg?fit=604%2C441&ssl=1" alt="duffy cotton">
-
-                <div class="detalle">
-                    <h4>Duffy Cotton</h4>
-                    <p>
-                        Nuevos Pañales DUFFY linea Cotton
-                        Un productos de Elegante, una de las mejores marcas en la Argentina para papel tissue y artículos para el cuidado personal.
-                        Con gel superabsorbente. Cintura eslastizada. 12 horas de protección.
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+            <div class="contenedor-paniales">
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/016/311/products/supersec-xxgx54c1-fa2672dc5adc682a5716077214463562-1024-10241-51e9ac17561089bb1816176559998325-640-0.jpg" alt="pampers supersec">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Super sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$1440</h4>
+                    </div>
                 </div>
-                
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/180844-1000-1000/Panales-Pampers-Confort-Sec-Max-Extra-Extra-Grande-54-u.jpg?v=637485086315200000" alt="pampers confortsec">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2100</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://cf.shopee.com.ar/file/97a4fb36e8b2204375aa4ee6dab77467" alt="premium care">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Premium care pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2400</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_842175-MLA43705541948_102020-O.jpg" alt="supersec pequeño">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Super sec pequeño</h4>
+                        <p>30 unidades</p>
+                        <h4>$500</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/175022-1000-1000/Pampers-Confort-Sec-Panales-Pequeno-X-56-Unidades.jpg?v=637396000520430000" alt="confort pequeño">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pequeño</h4>
+                        <p>56 unidades</p>
+                        <h4>$1400</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_976495-MLA32105008992_092019-O.jpg" alt="confort sec recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec recien nacido</h4>
+                        <p>56 unidades</p>
+                        <h4>$1600</h4>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="card-paniales-caricias">
-            <h2>CARICIAS</h2>
-
-            <div class="card-detalle">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_721765-MLA31605881211_072019-O.jpg" alt="pañales caricias 2da seleccion">
-
-                <div class="detalle">
-                    <h4>Caricias</h4>
-                    <p>
-                        Pañales Caricia. Son pañales Babysec ultra (paquete celeste) de segunda. 
-                    </p>
-
-                    <div class="talles">
-                        <h4>Talles</h4>
-                        <ul>
-                            <li>P 30 unidades</li>
-                            <li>M 66 unidades</li>
-                            <li>G 68 unidades</li>
-                            <li>XG 58 unidades</li>
-                            <li>XXG 54 unidades</li>
-                        </ul>
+            <div class="contenedor-paniales">
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/016/311/products/supersec-xxgx54c1-fa2672dc5adc682a5716077214463562-1024-10241-51e9ac17561089bb1816176559998325-640-0.jpg" alt="pampers supersec">
                     </div>
-                    
+                    <div class="contenedor-texto">
+                        <h4> Super sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$1440</h4>
+                    </div>
                 </div>
-                
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://pedidosfarma.vteximg.com.br/arquivos/ids/180844-1000-1000/Panales-Pampers-Confort-Sec-Max-Extra-Extra-Grande-54-u.jpg?v=637485086315200000" alt="pampers confortsec">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Confort sec pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2100</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://cf.shopee.com.ar/file/97a4fb36e8b2204375aa4ee6dab77467" alt="premium care">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Premium care pack ahorro</h4>
+                        <p>Mediano: 66 unidades</p>
+                        <p>Grande: 68 unidades</p>
+                        <p>XGrande: 58 unidades</p>
+                        <p>XXGrande: 54 unidades</p>
+                        <h4>$2400</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_842175-MLA43705541948_102020-O.jpg" alt="supersec pequeño">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Super sec pequeño</h4>
+                        <p>30 unidades</p>
+                        <h4>$500</h4>
+                    </div>
+                </div>
+                <div class="card-paniales">
+                    <div class="contenedor-img">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/0452e751deed967a6d93400721231cf2eefa73151f1c268e3666f13e4b1af12065789.png" alt="premium care recien nacido">
+                    </div>
+                    <div class="contenedor-texto">
+                        <h4> Premium care recien nacido</h4>
+                        <p>56 unidades</p>
+                        <h4>$1880</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="section-juguetes">
-        <h1>JUGUETES</h1>
-
-        <div id="card-juguetes">
+        <div id="card-juguetes">            
             <h2>DURAVIT PRIMERA INFANCIA</h2>
             <div class="card-detalle-juguetes">
-                <img src="https://rmelectro.com.ar/wp-content/uploads/2020/05/set-de-regalo-primera-infancia-duravit-D_NQ_NP_863559-MLA31094929327_062019-F.jpg" alt="juguete set regalo ">
                 <div class="detalle-juguete">
-                    <h4>Set Regalo</h4>
-                    <p>
-                        3 juegos en 1. 
-                        Incluye 1 pelota con sonajero, 1 juego de llaves, y 1 cubo con formas encastrables. 
-                        Linea Primera Infancia con colores vibrantes y libre de tóxicos. 
-                        Estimula el conocimiento de colores, formas y sonidos. Recomendado para chicos de 1 a 4 años.
-                    </p>           
+                    <div class="contenedor-img-juguete">
+                        <img src="https://rmelectro.com.ar/wp-content/uploads/2020/05/set-de-regalo-primera-infancia-duravit-D_NQ_NP_863559-MLA31094929327_062019-F.jpg" alt="juguete set regalo ">
+                    </div>
+                    <div class="contenedor-texto-juguete">
+                        <h4> Super sec pack ahorro</h4>
+                        <p>3 juegos en 1. 
+                            Incluye 1 pelota con sonajero, 1 juego de llaves, y 1 cubo con formas encastrables. 
+                            Linea Primera Infancia con colores vibrantes y libre de tóxicos. 
+                            Estimula el conocimiento de colores, formas y sonidos. Recomendado para chicos de 1 a 4 años.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle-juguetes">
-                <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/001/391/351/products/diseno-sin-titulo-391-b38aa33e7cf1a5d84616039061870583-640-0.jpg" alt="juguete mini moldes">
                 <div class="detalle-juguete">
-                    <h4>Mini Moldes Apilables</h4>
-                    <p>
-                        Juego ideal para primera infancia. Recomendado para chicos de 1 a 4 años. 
-                        Incluye 8 baldes de diferentes tamaños y colores. 
-                        Estimula el conocimiento de formas puras, colores y que puedan usar los baldes para jugar en la arena.
-                    </p>           
+                    <div class="contenedor-img-juguete">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_813533-MLA45983099076_052021-O.webp" alt="juguete mini moldes">
+                    </div>
+                    <div class="contenedor-texto-juguete">
+                        <h4>Mini Moldes Apilables</h4>
+                        <p>3 juegos en 1. 
+                            Incluye 1 pelota con sonajero, 1 juego de llaves, y 1 cubo con formas encastrables. 
+                            Linea Primera Infancia con colores vibrantes y libre de tóxicos. 
+                            Estimula el conocimiento de colores, formas y sonidos. Recomendado para chicos de 1 a 4 años.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle-juguetes">
-                <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/001/244/020/products/llave1-4fc7eb75feb1e28a2816049250498277-640-0.jpg" alt="llavero">
                 <div class="detalle-juguete">
-                    <h4>Mordillo de llaves</h4>
-                    <p>
-                        En los primeros años de vida nuestros niños se necesitan juguetes seguros y 
-                        creativos para desarrollar sus habilidades de manera natural espontánea. 
-                        Hay que estimular al niño a la hora de crecer. Contiene 3 llaves mordillo. 
-                        Edad recomendada a partir de 2 meses.
-                    </p>           
+                    <div class="contenedor-img-juguete">
+                        <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/001/244/020/products/llave1-4fc7eb75feb1e28a2816049250498277-640-0.jpg" alt="llavero">
+                    </div>
+                    <div class="contenedor-texto-juguete">
+                        <h4>Mini Moldes Apilables</h4>
+                        <p>
+                            Juego ideal para primera infancia. Recomendado para chicos de 1 a 4 años. 
+                            Incluye 8 baldes de diferentes tamaños y colores. 
+                            Estimula el conocimiento de formas puras, colores y que puedan usar los baldes para jugar en la arena.
+                        </p>   
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle-juguetes">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_601375-MLA41404363962_042020-O.jpg" alt="girabola">
                 <div class="detalle-juguete">
-                    <h4>Girabola</h4>
-                    <p>
-                        Juego didáctico para el desarrollo y crecimiento de los niños. CONTIENE: 
-                        5 BASES ENCASTRABLES DE COLORES, 3 PELOTITAS DE COLORES. MEDIDA APROXIMADA 30cm Alto. 
-                        EDAD RECOMENDADA +5 meses
-                    </p>           
+                    <div class="contenedor-img-juguete">
+                        <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/001/244/020/products/llave1-4fc7eb75feb1e28a2816049250498277-640-0.jpg" alt="llavero">
+                    </div>
+                    <div class="contenedor-texto-juguete">
+                        <h4>Mordillo de llaves</h4>
+                        <p>
+                            En los primeros años de vida nuestros niños se necesitan juguetes seguros y 
+                            creativos para desarrollar sus habilidades de manera natural espontánea. 
+                            Hay que estimular al niño a la hora de crecer. Contiene 3 llaves mordillo. 
+                            Edad recomendada a partir de 2 meses.
+                        </p> 
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle-juguetes">
-                <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/991/977/products/sin-titulo-21-21514a23c5787d569316206472131575-640-0.jpg" alt="esfera con cascabel">
                 <div class="detalle-juguete">
-                    <h4>Esfera con cascabel</h4>
-                    <p>
-                        Rueda, rueda sin parar... Aprendamos a jugar. 
-                        Esfera con cascabel, incentiva la capacidad visual y auditiva del niño.
-                        Medidas aprox: 13 cm de diámetro. Edad: +5 Meses
-                    </p>           
+                    <div class="contenedor-img-juguete">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_601375-MLA41404363962_042020-O.jpg" alt="girabola">
+                    </div>
+                    <div class="contenedor-texto-juguete">
+                        <h4>Girabola</h4>
+                        <p>
+                            Juego didáctico para el desarrollo y crecimiento de los niños. CONTIENE: 
+                            5 BASES ENCASTRABLES DE COLORES, 3 PELOTITAS DE COLORES. MEDIDA APROXIMADA 30cm Alto. 
+                            EDAD RECOMENDADA +5 meses
+                        </p>  
+                    </div>
                 </div>
-            </div>
-            <div class="card-detalle-juguetes">
-                <img src="https://www.juguetopolis.com.ar/img/productos/5de655009b8cb.jpg" alt="cubo didactico">
                 <div class="detalle-juguete">
-                    <h4>Cubo didactico de encastre</h4>
-                    <p>
-                        El cubo tiene figuras caladas para encastrar piezas en sus 6 lados, cada lado tiene 3 encastres, 
-                        y el juego incluye 9 formas diferentes de colores para encastrar en alguno de los lados. 
-                        Tiene tapa que abre y cierra para guardar las formas a encastrar. 
-                        El cubo es verde con tapa naranja. Ideal para desarrollar la motricidad 
-                        fina y aprender a reconocer formas y colores.
-                        Realizado en plástico resistente, no tóxico, libre de BPA y ftalatos. 
-                        Recomendado para niños a partir de 12 meses.
-                    </p>           
+                    <div class="contenedor-img-juguete">
+                        <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/991/977/products/sin-titulo-21-21514a23c5787d569316206472131575-640-0.jpg" alt="esfera con cascabel">
+                    </div>
+                    <div class="contenedor-texto-juguete">
+                        <h4>Esfera con cascabel</h4>
+                        <p>
+                            Rueda, rueda sin parar... Aprendamos a jugar. 
+                            Esfera con cascabel, incentiva la capacidad visual y auditiva del niño.
+                            Medidas aprox: 13 cm de diámetro. Edad: +5 Meses
+                        </p> 
+                    </div>
                 </div>
+                <div class="detalle-juguete">
+                    <div class="contenedor-img-juguete">
+                        <img src="https://www.juguetopolis.com.ar/img/productos/5de655009b8cb.jpg" alt="cubo didactico">
+                    </div>
+                    <div class="contenedor-texto-juguete">
+                        <h4>Cubo didactico de encastre</h4>
+                        <p>
+                            El cubo tiene figuras caladas para encastrar piezas en sus 6 lados, cada lado tiene 3 encastres, 
+                            y el juego incluye 9 formas diferentes de colores para encastrar en alguno de los lados. 
+                            Tiene tapa que abre y cierra para guardar las formas a encastrar. 
+                            El cubo es verde con tapa naranja. Ideal para desarrollar la motricidad 
+                            fina y aprender a reconocer formas y colores.
+                            Realizado en plástico resistente, no tóxico, libre de BPA y ftalatos. 
+                            Recomendado para niños a partir de 12 meses.
+                        </p> 
+                    </div>
+                </div>
+                
             </div>
-        </div>    
+        </div> 
     </section>
 
     <section id="section-ropa">
-        <img class="ropa-logo" src="./img/tiendaKatrina.png" alt="logo tienda katrina diferentes colores">
         <div class="card-principal">
-            <h1>TIENDA KATRINA</h1>
-            <h4>
-                Hola, soy Mar! Encargada de la seccion de Ropa del Local 🥰, 
-                tengo una modelo hija de 4 años que la van a poder ver en muchas fotos 😅! 
-            </h4>
-
-            <div id="card-ropa">
-                <div class="card-detalle-ropa">
-                    <img src="./img/emma1.jpeg" alt="remera corta">                        
-                    <div class="detalle-ropa">
-                        <h4>Remera mangas cortas</h4>
-                        <p> Colores disponibles: Blanco - Rojo - Negro. </p>
-                        <p> Talles: 1 - 2- 3 </p>
-                    </div>
+            <h2> Ropa y Accesorios de 
+                <a href="https://github.com/brendalamas">
+                    <i> @tienda.katrina</i>
+                </a>
+            </h2>
+            <div class="contenedor-contactos-ropa">
+                <p>
+                    ¡Podes encontrar todos los articulos de la tienda en el local!
+                </p>
+                <p>
+                    Te dejamos el catalogo actualizado e instagram para que puedas enterarte todas las novedades
+                </p>
+                <p>
+                    Recorda que tenemos envios a domicilio sin cargo y puntos de encuentro.
+                </p>
+                <div class="contenedor-redes-ropa">
+                    <a href="https://wa.me/c/5491127299721" target="blank" class="cta">
+                        <span>WhatsApp</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/c/5491127299721" target="blank" class="cta">
+                        <span>Instagram</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
                 </div>
-                <div class="card-detalle-ropa">
-                    <img src="./img/body.jpeg" alt="body mangas largas">                        
-                    <div class="detalle-ropa">
-                        <h4>Body mangas largas</h4>
-                        <p> Colores disponibles: Blanco - Rojo - Negro. </p>
-                        <p> Talles: 1 - 2- 3 </p>
-                    </div>
-                </div>
-                <div class="card-detalle-ropa">
-                    <img src="./img/body1.jpeg" alt="body mangas largas">                        
-                    <div class="detalle-ropa">
-                        <h4>Body mangas largas</h4>
-                        <p> Colores disponibles: Blanco - Rojo - Negro. </p>
-                        <p> Talles: 1 - 2- 3 </p>
-                    </div>
-                </div>
-                <div class="card-detalle-ropa">
-                    <img src="./img/body2.jpeg" alt="body mangas largas">                        
-                    <div class="detalle-ropa">
-                        <h4>Body mangas largas</h4>
-                        <p> Colores disponibles: Blanco - Rojo - Negro. </p>
-                        <p> Talles: 1 - 2- 3 </p>
-                    </div>
-                </div>
-                <div class="card-detalle-ropa">
-                    <img src="./img/accesorios.jpeg" alt="bandanas">                        
-                    <div class="detalle-ropa">
-                        <h4>Bandanas</h4>
-                        <p> Colores disponibles: Blanco - Rojo - Negro. </p>
-                    </div>
-                </div>
-                <div class="card-detalle-ropa">
-                    <img src="./img/accesorios1.jpeg" alt="Sonajeros">                        
-                    <div class="detalle-ropa">
-                        <h4>Sonajeros</h4>
-                        <p> Colores disponibles: Blanco - Rojo - Negro. </p>
-                    </div>
-                </div>
-                <div class="card-detalle-ropa">
-                    <img src="./img/accesorios2.jpeg" alt="sonajeros">                        
-                    <div class="detalle-ropa">
-                        <h4>Sonajeros</h4>
-                        <p> Colores disponibles: Blanco - Rojo - Negro. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="contacto-ropa">
-                <a href="https://wa.me/c/5491127299721">➡️ Accedé al WhatsApp de la tienda ⬅️</a>
-                <a href="https://wa.me/c/5491127299721">➡️ Accedé al Instagram de la tienda ⬅️</a>
             </div>            
         </div>
     </section>
 
-    <section id="section-envios">
-        <div class="card-envios-principal">
-            <h1>ENVIOS A DOMICLIO</h1>
-            <img src="https://diarioanticipos.com/wp-content/uploads/2021/03/envio-a-domicilio.jpg" alt="envios a domicilio">
-            <h4>
-                Se toman pedidos hasta las 16hs del mismo dia. 
-                Pasado el horario, pueden realizar pedidos para el dia siguiente
-            </h4>
-            <h3>
-                Recorda que tambien podes realizar tu pedido y pasarlo a buscar por el local!
-            </h3>
-            <div id="card-envios">
-                <div class="detalle-envios">
-                    <h4>Envios a Domicilio</h4>
-                    <ul>
-                        <li>CABA</li>
-                        <li>LANUS</li>
-                        <li>AVELLANEDA</li>
-                    </ul>
-                
+    <section id="section-contacto">
+            <h2>Contacto</h2>
+            <div class="card-contacto">
+                <div class="contacto-texto">
+                    <p>Lunes a Sábados de 9:30 a 20:30</p>
+                    <p>Domingos de 9:30 a 14:30</p>
+                    <a href="https://wa.me/c/5491127299721" target="blank"> 
+                        <span>
+                            <i class="fab fa-whatsapp"></i>
+                            <p>11 2729 9721</p>
+                        </span>
+                    </a>                
+                    <a href="https://mail.google.com/mail/u/3/?ogbl#inbox" target="blank"> 
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                            <p>lafamiliapanalera@gmail.com</p>
+                        </span>
+                    </a>
+                    <a href="https://www.google.com/maps/@-34.6549462,-58.4022961,2a,75y,156.12h,90t/data=!3m6!1e1!3m4!1sZ8wynBuNIeFzjp8fPM3CLA!2e0!7i13312!8i6656" target="blank"> 
+                        <span>
+                            <i class="fas fa-solid fa-location-arrow"></i>                    
+                            <p>Santo Domingo 3800, Nueva Pompeya, CABA. </p>
+                        </span> 
+                    </a>
                 </div>
-                <div class="detalle-envios">
-                    <h4>Envios Gratis</h4>
-                    <ul>
-                        <li>A 1km de distancia</li>
-                        <li>En compras +$5000</li>
-                    </ul>
-                </div>
-            </div>          
-        </div>
+                <form class="contacto-form">
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" name="nombre" id="" required>
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="" required> 
+                    <label for="">Telefono*</label>
+                    <input type="number" name="" id="" required>
+                    <label for="mensaje">Mensaje*</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                    <button class="enviar">Enviar</button>
+                </form>
+            </div>
     </section>
 
-    <section id="section-pagos">
-        <div class="card-pagos-principal">
-            <h1>METODOS DE PAGO</h1>            
-            <div id="card-pagos">
-                <div class="detalle-pagos">
-                    <img src="https://thumbs.dreamstime.com/b/d%C3%A9-sostener-el-dinero-cuentas-disponibles-tipo-de-pago-del-efectivo-vector-la-enfermedad-112009512.jpg" alt="Efectivo">
-                    <h4>Efectivo</h4>
-                </div>
-                <div class="detalle-pagos">
-                    <img src="https://tuquejasuma.com/media/images/entity576_square_Cb0F10X.png" alt="mercado pago">
-                    <h4>Mercado Pago</h4>
-                </div>
-                <div class="detalle-pagos">
-                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmoGtKwY2RqspR7SjelSSlTyydk5Q84FQ_6MGwBWGlyzZ-AJTF" alt="Transferencia Bancaria">
-                    <h4>Transferencia Bancaria</h4>
-                </div>
-            </div>          
-        </div>
-        </div>
-    </section>
     <footer>
-        <h1>¡Seguinos en nuestras redes!</h1>
-        <div class="redes">
-            <a href="https://www.facebook.com/panaleralafamilia02"> <span><i class="fab fa-facebook"></i></span> Facebook</a>
-            <a href="https://www.instagram.com/panalera.lafamilia/"> <span><i class="fab fa-instagram"></i></span> Instagram</a>
-            <a href="https://wa.me/c/5491127299721"> <span><i class="fab fa-whatsapp"></i></span> WhatsApp</a>
-        </div>        
+        <div class="contenedor-contacto">
+            <h4>Contactanos</h4>
+            <a href="https://wa.me/c/5491127299721" target="blank"> 
+                <span>
+                    <i class="fab fa-whatsapp"></i>
+                    <p>11 2729 9721</p>
+                </span>
+            </a>                
+            <a href="https://mail.google.com/mail/u/3/?ogbl#inbox" target="blank"> 
+                <span>
+                    <i class="fas fa-envelope"></i>
+                    <p>lafamiliapanalera@gmail.com</p>
+                </span>
+            </a>
+            <a href="https://www.google.com/maps/@-34.6549462,-58.4022961,2a,75y,156.12h,90t/data=!3m6!1e1!3m4!1sZ8wynBuNIeFzjp8fPM3CLA!2e0!7i13312!8i6656" target="blank"> 
+                <span>
+                    <i class="fas fa-solid fa-location-arrow"></i>                    
+                    <p>Santo Domingo 3800, Nueva Pompeya, CABA. </p>
+                </span> 
+            </a>
+        </div>
+        <div class="contenedor-conectados">
+            <h4>Sigamos conectados</h4>
+            <a href="https://www.facebook.com/panaleralafamilia02" target="blank"> 
+                <span>
+                    <i class="fab fa-facebook"></i>
+                    <p>Facebook</p>
+                </span>
+            </a>
+            <a href="https://www.instagram.com/panalera.lafamilia/" target="blank"> 
+                <span>
+                    <i class="fab fa-instagram"></i>
+                    <p>Instagram</p>
+                </span>
+            </a>
+            
+        </div>
     </footer>
     <script src="./index.js"></script>
 </body>

@@ -1,37 +1,39 @@
+//secciones
 const sectionPaniales = document.querySelector("#section-paniales")
 const sectionInicio = document.querySelector("#section-inicio")
 const sectionJuguetes = document.querySelector("#section-juguetes")
 const sectionRopa = document.querySelector("#section-ropa")
-const sectionEnvios = document.querySelector("#section-envios")
-const sectionPagos = document.querySelector("#section-pagos")
-
-
-const paniales = document.querySelector("#paniales")
-const inicio = document.querySelector("#inicio")
-const juguetes = document.querySelector("#juguetes")
-const ropa = document.querySelector("#ropa")
-const envios = document.querySelector("#envios")
-const pagos = document.querySelector("#pagos")
-
-const pampers = document.querySelector("#pampers")
-const huggies = document.querySelector("#huggies")
-const babysec = document.querySelector("#babysec")
-const estrella = document.querySelector("#estrella")
-const duffy = document.querySelector("#duffy")
-const caricias = document.querySelector("#caricias")
-
-
+const sectionContacto = document.querySelector("#section-contacto")
+const footer = document.querySelector("footer")
+//seccion inicio
+const combos = document.querySelector(".combos")
+const ofertas = document.querySelector(".ofertas")
+//botones del header
+const botonPaniales = document.querySelector("#paniales")
+const botonInicio = document.querySelector("#inicio")
+const botonJuguetes = document.querySelector("#juguetes")
+const botonRopa = document.querySelector("#ropa")
+const botonContacto = document.querySelector("#contacto")
+const botonPagos = document.querySelector("#pagos")
+//botones de la seccion paniales
+const botonPampers = document.querySelector("#pampers")
+const botonHuggies = document.querySelector("#huggies")
+const botonBabysec = document.querySelector("#babysec")
+const botonEstrella = document.querySelector("#estrella")
+const botonDuffy = document.querySelector("#duffy")
+const botonCaricias = document.querySelector("#caricias")
 const cardPampers = document.querySelector("#card-paniales-pampers")
 const cardHuggies = document.querySelector("#card-paniales-huggies")
 const cardBabysec = document.querySelector("#card-paniales-babysec")
 const cardEstrella = document.querySelector("#card-paniales-estrella")
 const cardDuffy = document.querySelector("#card-paniales-duffy")
 const cardCaricias = document.querySelector("#card-paniales-caricias")
-
 const botones = document.querySelector(".botones")
+const botonesNav = document.querySelector(".botones")
 
-//funciones auxiliares
-const seccionesNone = () => {
+
+/////// funciones auxiliares ///////
+const cardDisplayNone = () => {
     cardPampers.style.display="none"
     cardHuggies.style.display="none"
     cardBabysec.style.display="none"
@@ -40,79 +42,68 @@ const seccionesNone = () => {
     cardCaricias.style.display="none"
 }
 
-//botones principales del nav
-paniales.onclick =()=>{
-    sectionJuguetes.style.display="none"
-    sectionRopa.style.display="none"
-    sectionPaniales.style.display="flex"
-    sectionEnvios.style.display="none"
-    sectionInicio.style.display="none"
-    sectionPagos.style.display="none"
-    seccionesNone()
-
-    const botonVolverAtras = document.querySelector(".boton-volver-atras")
-
-    botonVolverAtras.onclick = () => {
-        cardPampers.style.display="none"
-        cardHuggies.style.display="none"
-        cardBabysec.style.display="none"
-        cardEstrella.style.display="none"
-        cardDuffy.style.display="none"
-        cardCaricias.style.display="none"
-    }
-}
-
-inicio.onclick =()=>{
+/////// botones secciones ///////
+botonInicio.onclick =()=>{
     sectionPaniales.style.display="none"
-    sectionEnvios.style.display="none"
+    sectionContacto.style.display="none"
     sectionRopa.style.display="none"
     sectionJuguetes.style.display="none"
     sectionInicio.style.display="flex"
-    sectionPagos.style.display="none"
 }
-juguetes.onclick =()=>{
+botonPaniales.onclick =()=>{
+    sectionJuguetes.style.display="none"
+    sectionRopa.style.display="none"
+    sectionPaniales.style.display="flex"
+    sectionContacto.style.display="none"
+    sectionInicio.style.display="none"
+    footer.style.display="none"
+    cardDisplayNone()
+    botonesNav.style.flexDirection="column"
+}
+botonJuguetes.onclick =()=>{
     sectionPaniales.style.display="none"
-    sectionEnvios.style.display="none"
+    sectionContacto.style.display="none"
     sectionRopa.style.display="none"
     sectionInicio.style.display="none"
     sectionJuguetes.style.display="flex"
-    sectionPagos.style.display="none"
+    footer.style.display="none"
 }
-ropa.onclick =()=>{
+botonRopa.onclick =()=>{
     sectionPaniales.style.display="none"
     sectionInicio.style.display="none"
-    sectionEnvios.style.display="none"
+    sectionContacto.style.display="none"
     sectionJuguetes.style.display="none"
     sectionRopa.style.display="flex"
-    sectionPagos.style.display="none"
+    footer.style.display="none"
 }
-envios.onclick =()=>{
+botonContacto.onclick =()=>{
     sectionPaniales.style.display="none"
     sectionInicio.style.display="none"
     sectionJuguetes.style.display="none"
     sectionRopa.style.display="none"
-    sectionEnvios.style.display="flex"
-    sectionPagos.style.display="none"
+    sectionContacto.style.display="flex"
 }
-pagos.onclick =()=>{
+botonPagos.onclick =()=>{
     sectionPaniales.style.display="none"
     sectionInicio.style.display="none"
     sectionJuguetes.style.display="none"
     sectionRopa.style.display="none"
-    sectionEnvios.style.display="none"
-    sectionPagos.style.display="flex"
+    sectionContacto.style.display="none"
 }
 
-// click en los botones de seccion paniales
-pampers.onclick = () =>{
+/////// botones dentro de la seccion paniales ///////
+botonPampers.onclick = () =>{
+    botonesNav.style.flexDirection="row"
     cardPampers.style.display="flex"
     cardHuggies.style.display="none"
     cardBabysec.style.display="none"
     cardEstrella.style.display="none"
     cardDuffy.style.display="none"
     cardCaricias.style.display="none"
+    
 }
-huggies.onclick = () =>{
+botonHuggies.onclick = () =>{
+    botonesNav.style.flexDirection="row"
     cardPampers.style.display="none"
     cardHuggies.style.display="flex"
     cardBabysec.style.display="none"
@@ -121,7 +112,8 @@ huggies.onclick = () =>{
     cardCaricias.style.display="none"
 
 }
-estrella.onclick = () =>{
+botonEstrella.onclick = () =>{
+    botonesNav.style.flexDirection="row"
     cardPampers.style.display="none"
     cardHuggies.style.display="none"
     cardBabysec.style.display="none"
@@ -129,7 +121,8 @@ estrella.onclick = () =>{
     cardDuffy.style.display="none"
     cardCaricias.style.display="none"
 }
-babysec.onclick = () =>{
+botonBabysec.onclick = () =>{
+    botonesNav.style.flexDirection="row"
     cardPampers.style.display="none"
     cardHuggies.style.display="none"
     cardBabysec.style.display="flex"
@@ -137,7 +130,8 @@ babysec.onclick = () =>{
     cardDuffy.style.display="none"
     cardCaricias.style.display="none"
 }
-duffy.onclick = () =>{
+botonDuffy.onclick = () =>{
+    botonesNav.style.flexDirection="row"
     cardPampers.style.display="none"
     cardHuggies.style.display="none"
     cardBabysec.style.display="none"
@@ -145,7 +139,8 @@ duffy.onclick = () =>{
     cardDuffy.style.display="flex"
     cardCaricias.style.display="none"
 }
-caricias.onclick = () =>{
+botonCaricias.onclick = () =>{
+    botonesNav.style.flexDirection="row"
     cardPampers.style.display="none"
     cardHuggies.style.display="none"
     cardBabysec.style.display="none"

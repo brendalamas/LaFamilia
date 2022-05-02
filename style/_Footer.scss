@@ -1,30 +1,31 @@
 footer{
-    @include flex ($direction:column, $content:space-around);
-    background-color: $colorSecundario;
+    @include flex ($direction:row, $justify:space-around, $align:center);
     width: 100vw;
+    background-color: $colorTerciario;
+    color: $colorSecundario;
     font-family: $typography;
-    color: $colorPrincipal;
-    padding: $espacioL;
-    font-size: $sizeM;
-    h1{
+    animation-name: animacion;
+    animation-duration: 5s;
+    padding: $espacioS 0;
+    .contenedor-contacto, .contenedor-conectados{
+        @include flex ($direction:column, $justify:center, $align:flex-start);
+    }
+    .contenedor-contacto h4, .contenedor-conectados h4{
         margin-bottom: $espacioS;
+        font-size: $sizeM;
     }
-    .redes{
-        margin-top: $espacioXL;
-        a{
-            color: $colorSecundario;
-            background-color: $colorPrincipal;
-            margin: $espacioS;
-            padding: $espacioS;
-            border-radius: $borderRadius;
-            font-size: $sizeM;
-        }
-        a:link{
-            text-decoration:none;
-        }
-        a:hover{
-            color: $colorPrincipal;
-            background-color: $colorSecundario;
-        }
+    .contenedor-contacto a, .contenedor-conectados a{
+        text-decoration: none;
+        color: $colorSecundario;
     }
+    .contenedor-contacto a span p, .contenedor-conectados a span p{
+        margin-left: $espacioXS;
+    }
+    .contenedor-contacto a span, .contenedor-conectados a span{
+        @include flex ($direction:row, $justify:space-around, $align:center);
+        margin-bottom: .5rem;
+        font-size: $sizeS;
+    }
+    
+    
 }

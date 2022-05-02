@@ -1,7 +1,8 @@
 //typography
-$typography: 'Acme', sans-serif;
+$typography: 'Josefin Sans', sans-serif;
 
 // font size
+$sizeXS:.5rem;
 $sizeS:1rem;
 $sizeM:1.5rem;
 $sizeL:2rem;
@@ -9,10 +10,12 @@ $sizeXL:2.5rem;
 $sizeXXL:3rem;
 
 //color principal
-$colorPrincipal:#0dc1ee;
+$colorPrincipal:#8DD6F8;
 $colorSecundario:#ffffff;
+$colorTerciario: #3cbaf5;
 
 //margin - padding
+$espacioXXS:0.3rem;
 $espacioXS:0.5rem;
 $espacioS:1rem;
 $espacioM:1.5rem;
@@ -21,12 +24,14 @@ $espacioXL:2.5rem;
 $espacioXXL:3rem;
 $espacioXXXL:3.5rem;
 $espacioXXXXL:4rem;
-
+$espacioInicio: 10rem;
 //border 
 $borderRadius: 10px;
-@mixin flex($direction, $content){
+$borderRadius2: 20px;
+
+@mixin flex($direction, $justify, $align){
     display: flex;
     flex-direction: $direction;
-    justify-content: $content;
-    align-items: center;
+    justify-content: $justify;
+    align-items: $align;
 }

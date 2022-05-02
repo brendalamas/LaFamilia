@@ -1,41 +1,50 @@
 #section-juguetes{
-    @include flex($direction:column, $content:center);
+    @include flex ($direction:column, $justify:center, $align:center);
     font-family: $typography;
-    color: $colorPrincipal;
-    display: none;
-    h1{
-        text-align: center;
-        margin: $espacioXL $espacioM;
-        font-size: $sizeL;
-    }
     #card-juguetes{
-        @include flex($direction:column, $content:center);
-        color:$colorPrincipal;
-        margin: $espacioM;
-        padding: $espacioM;
-        width: 65%;
-        border-radius: $borderRadius;
-        border: 2px solid #CCF8FB;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        @include flex ($direction:column, $justify:center, $align:center);
+        color:$colorSecundario;
+        margin: $espacioXXL;
+        h2{
+            font-size: $sizeM;
+            margin-bottom: $espacioS;
+        }
         .card-detalle-juguetes{
-            @include flex($direction:row, $content:center);
-            border: 1px solid #CCF8FB;
-            margin: $espacioS;
-            img{
-                width: 30%;
-            }
+            @include flex ($direction:row, $justify:center, $align:center);
+            flex-wrap: wrap;
             .detalle-juguete{
-                @include flex($direction:column, $content:center);
-                margin: $espacioM;
-                h4{
-                    font-size: $sizeM;
-                    margin-bottom: $espacioS;
+                @include flex ($direction:column, $justify:center, $align:center);
+                border-radius: $borderRadius;
+                border: 2px solid #CCF8FB;
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+                width: 30%;
+                padding: $espacioS;
+                margin: $espacioS;
+                height: 25rem;
+                .contenedor-img-juguete{
+                    @include flex ($direction:column, $justify:center, $align:center);
+                    width: 40%;
+                    img{
+                        width: 100%;
+                        object-fit: scale-down;
+                    }
                 }
-                p{
-                    font-size: 1.2rem;
+                .contenedor-texto-juguete{
+                    @include flex ($direction:column, $justify:center, $align:center);
+                    h4{
+                        font-size: $sizeM;
+                        padding-top: $espacioM;
+                        padding-bottom: $espacioXS;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                        line-height: 1.5;
+                        text-align: center;
+                    }
                 }
             }
-            
         }
     }
+    display: none;
 }
