@@ -49,6 +49,7 @@ botonInicio.onclick =()=>{
     sectionRopa.style.display="none"
     sectionJuguetes.style.display="none"
     sectionInicio.style.display="flex"
+    footer.style.display="flex"
 }
 botonPaniales.onclick =()=>{
     sectionJuguetes.style.display="none"
@@ -82,13 +83,7 @@ botonContacto.onclick =()=>{
     sectionJuguetes.style.display="none"
     sectionRopa.style.display="none"
     sectionContacto.style.display="flex"
-}
-botonPagos.onclick =()=>{
-    sectionPaniales.style.display="none"
-    sectionInicio.style.display="none"
-    sectionJuguetes.style.display="none"
-    sectionRopa.style.display="none"
-    sectionContacto.style.display="none"
+    footer.style.display="flex"
 }
 
 /////// botones dentro de la seccion paniales ///////

@@ -1,9 +1,11 @@
 #section-contacto{
-    @include flex ($direction:column, $justify:center, $align:center);
+    @include flex ($direction:column, $justify:flex-start, $align:center);
     width: 80%;
+    font-family: $typography;
+    margin-bottom: $espacioL;
     h2{
         color: $colorSecundario;
-        font-size: $sizeXXL;
+        font-size: $sizeXL;
     }
     .card-contacto{
         @include flex ($direction:row, $justify:space-around, $align:flex-start);
@@ -11,6 +13,7 @@
         margin-top: 5rem;
         .contacto-texto{
             @include flex ($direction:column, $justify:center, $align:flex-start);
+            width: 40%;
             p, a{
                 text-decoration: none;
                 color: $colorSecundario;
@@ -27,6 +30,7 @@
         }
         .contacto-form{
             @include flex ($direction:column, $justify:center, $align:flex-start);
+            width: 40%;
             label{
                 color: $colorSecundario;
                 font-size: 1.2rem;

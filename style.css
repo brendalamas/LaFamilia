@@ -422,89 +422,16 @@ header div button:hover:after {
 #section-contacto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Josefin Sans", sans-serif;
-  color: #8DD6F8;
-  width: 65%;
-  font-size: 2rem;
-  padding: 2.5rem;
-  border-radius: 10px;
-  margin: 1.5rem;
-  box-shadow: 0 0 15px 0 #8DD6F8;
-  display: none;
-}
-#section-contacto .card-envios-principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
-}
-#section-contacto .card-envios-principal h1 {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 2rem;
-}
-#section-contacto .card-envios-principal h4 {
-  font-weight: 200;
-}
-#section-contacto .card-envios-principal h3, #section-contacto .card-envios-principal h4 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
-}
-#section-contacto .card-envios-principal h3 {
-  font-weight: "bold";
-}
-#section-contacto .card-envios-principal img {
-  width: 55%;
-  margin-top: 1.5rem;
-}
-#section-contacto .card-envios-principal #card-envios {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: #8DD6F8;
-  margin: 1.5rem;
-  padding: 1.5rem;
-  width: 95%;
-  border-radius: 10px;
-  border: 2px solid #CCF8FB;
-}
-#section-contacto .card-envios-principal #card-envios .detalle-envios {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  border: 1px solid #CCF8FB;
-  border-radius: 10px;
-  margin: 1.5rem;
-}
-#section-contacto .card-envios-principal #card-envios .detalle-envios h4 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-#section-contacto .card-envios-principal #card-envios .detalle-envios ul {
-  list-style: none;
-  font-size: 1.5rem;
-}
-
-#section-contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 80%;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 2rem;
   display: none;
 }
 #section-contacto h2 {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 #section-contacto .card-contacto {
   display: flex;
@@ -519,6 +446,7 @@ header div button:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 40%;
 }
 #section-contacto .card-contacto .contacto-texto p, #section-contacto .card-contacto .contacto-texto a {
   text-decoration: none;
@@ -541,6 +469,7 @@ header div button:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 40%;
 }
 #section-contacto .card-contacto .contacto-form label {
   color: #ffffff;
