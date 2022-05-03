@@ -1,20 +1,16 @@
-<img src="https://user-images.githubusercontent.com/74736159/158622327-534aac31-55f6-4ad7-a160-e30e6d05ae1f.png"/>
-<img src="https://user-images.githubusercontent.com/74736159/158622492-b022731c-4174-4021-91bb-370d23711c75.png"/>
-
-### Pañalera La Familia
-
-<h2>Pagina web estatica para emprendimiento familiar</h2>
-<a href="https://panaleralafamilia.netlify.app/">¡Ingresa a la web!</a>
+## Pañalera La Familia
+### Pagina web estatica para emprendimiento
 
 <h3>🔎 ¿Que podes hacer?</h3>
 <ul>
-  <li> Inicio: Presentacion, con los integrantes del emprendimiento, año en que surgio, ubicacion y redes que manejan </li>
-  <li> 👶 Pañales: Marcas que trabajan, descripcion de los mismos, y talles disponibles</li>
-  <li> 🧸 Juguetes: Linea de Juguetes que tienen disponibles, edad recomendada y breve descripcion de los mismos</li>
-  <li> 🛍 Ropa: Presentacion de la seccion, modelos de ropa, talles y colores </li>
-  <li> 🚘 Envios: Lugares donde realizan envios a domicilio y horarios </li>
-  <li> 💳 Metodos de Pago: Metodos de pago que aceptan</li>
+  <li> ✍️ Inicio: Presentacion de la tienda, y link al catalogo actualizado. </li>
+  <li> 👶 Pañales: Marcas, talles, y precios. </li>
+  <li> 🧸 Juguetes: Linea de Juguetes que disponene, edad recomendada y breve descripcion de los mismos. </li>
+  <li> 🛍 Ropa: Presentacion, Link a whatsapp e instagram. </li>
+  <li> 📲 Contacto: Horarios, Ubicacion, Telefono, Email y Formularios. </li>
 </ul>
+
+<br/>
 
 <h3>💻 Tecnologias utilizadas</h3>
 <div style="display:flex"> 
@@ -23,4 +19,11 @@
   <img style="width:10%" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"/>
 </div>
 
-<h3>Gracias por pasar! ❤️❤️</h3>
+<br/>
+
+### <a href="https://panaleralafamilia.netlify.app/">¡Ingresa a la tienda!</a>
+
+<p> A continuacion, algunas partes de la tienda</p>
+<img src="https://user-images.githubusercontent.com/74736159/166586540-61cba330-ff66-4dce-88fd-5c089cec118c.png">
+<img src="https://user-images.githubusercontent.com/74736159/166586602-f7311349-61d1-4386-beff-1bedb45154ea.png"/>
+<h3> ¡Gracias por pasar! ❤</h3>
