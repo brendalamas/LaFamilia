@@ -1,8 +1,9 @@
 #section-contacto{
     @include flex ($direction:column, $justify:flex-start, $align:center);
-    width: 80%;
+    width: 90%;
     font-family: $typography;
-    margin-bottom: $espacioL;
+    margin-top:$espacioInicio;
+    margin-bottom: $espacioInicio;
     h2{
         color: $colorSecundario;
         font-size: $sizeXL;
@@ -13,11 +14,11 @@
         margin-top: 5rem;
         .contacto-texto{
             @include flex ($direction:column, $justify:center, $align:flex-start);
-            width: 40%;
+            width: 45%;
             p, a{
                 text-decoration: none;
                 color: $colorSecundario;
-                font-size: 1.2rem;
+                font-size: $sizeM;
                 font-weight: 300;
                 line-height: 1.8;
             }
@@ -30,10 +31,10 @@
         }
         .contacto-form{
             @include flex ($direction:column, $justify:center, $align:flex-start);
-            width: 40%;
+            width: 45%;
             label{
                 color: $colorSecundario;
-                font-size: 1.2rem;
+                font-size: $sizeM;
                 font-weight: 300;
                 margin-bottom: $espacioXXS;
             }

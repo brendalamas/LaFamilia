@@ -11,11 +11,13 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 0.5rem;
+  padding: 0.5rem;
   width: 100vw;
-  height: 18vh;
+  position: fixed;
+  top: 0;
   animation-name: animacion;
   animation-duration: 5s;
+  background-color: #8DD6F8;
 }
 header .contenedor-logo {
   width: 12%;
@@ -24,7 +26,7 @@ header .contenedor-logo img {
   width: 100%;
 }
 header button {
-  margin: 1rem;
+  padding: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
   color: #ffffff;
@@ -59,7 +61,7 @@ header div button:hover:after {
   justify-content: center;
   align-items: center;
   font-family: "Josefin Sans", sans-serif;
-  margin-top: 2rem;
+  margin-top: 10rem;
   display: none;
 }
 #section-paniales .botones {
@@ -74,12 +76,11 @@ header div button:hover:after {
   background-color: #ffffff;
   color: #8DD6F8;
   border: none;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   margin: 0.5rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 10px;
-  width: 8rem;
   cursor: pointer;
 }
 #section-paniales .botones button:hover {
@@ -97,7 +98,6 @@ header div button:hover:after {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  margin: 3rem;
 }
 #section-paniales #card-paniales-pampers .contenedor-paniales,
 #section-paniales #card-paniales-huggies .contenedor-paniales,
@@ -110,6 +110,7 @@ header div button:hover:after {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales,
 #section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales,
@@ -183,6 +184,7 @@ header div button:hover:after {
   justify-content: center;
   align-items: center;
   font-family: "Josefin Sans", sans-serif;
+  margin-top: 10rem;
   display: none;
 }
 #section-juguetes #card-juguetes {
@@ -191,7 +193,6 @@ header div button:hover:after {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  margin: 3rem;
 }
 #section-juguetes #card-juguetes h2 {
   font-size: 1.5rem;
@@ -199,39 +200,37 @@ header div button:hover:after {
 }
 #section-juguetes #card-juguetes .card-detalle-juguetes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   border: 2px solid #CCF8FB;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  padding: 1rem;
-  margin: 1rem;
-  height: 25rem;
+  width: 60%;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-img-juguete {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 40%;
+  width: 30%;
 }
 #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-img-juguete img {
   width: 100%;
-  object-fit: scale-down;
 }
 #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-texto-juguete {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-texto-juguete h4 {
@@ -244,6 +243,7 @@ header div button:hover:after {
   font-size: 0.8rem;
   line-height: 1.5;
   text-align: center;
+  width: 80%;
 }
 
 #section-inicio {
@@ -253,10 +253,9 @@ header div button:hover:after {
   align-items: center;
   font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 2.5rem;
   border-radius: 10px;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 10rem;
   animation-name: animacion;
   animation-duration: 7s;
 }
@@ -266,15 +265,19 @@ header div button:hover:after {
   justify-content: center;
   align-items: center;
 }
+#section-inicio .card-contenedor h1 {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
 #section-inicio .card-contenedor p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 45%;
   text-align: center;
-  margin-top: 1.5rem;
   font-weight: 300;
   line-height: 1;
 }
 #section-inicio .catalogo-contenedor {
+  overflow: hidden;
   margin-top: 6rem;
 }
 #section-inicio .catalogo-contenedor a {
@@ -286,7 +289,7 @@ header div button:hover:after {
   justify-content: space-around;
   align-items: center;
   width: 80%;
-  margin-top: 10rem;
+  padding: 10rem 0 10rem 0;
 }
 #section-inicio .promos .combos, #section-inicio .promos .ofertas {
   display: flex;
@@ -295,12 +298,15 @@ header div button:hover:after {
   align-items: center;
   border: 1px solid #ffffff;
   border-radius: 10%;
-  padding: 4rem;
+  padding: 3.5rem;
   cursor: pointer;
 }
 #section-inicio .promos .combos i, #section-inicio .promos .ofertas i {
-  margin-bottom: 4rem;
-  font-size: 8rem;
+  margin-bottom: 3rem;
+  font-size: 6rem;
+}
+#section-inicio .promos .combos p, #section-inicio .promos .ofertas p {
+  font-size: 2.5rem;
 }
 #section-inicio .promos .combos:hover, #section-inicio .promos .ofertas:hover {
   background-color: #ffffff;
@@ -310,7 +316,7 @@ header div button:hover:after {
 .cta {
   position: relative;
   margin: auto;
-  padding: 12px 18px;
+  padding: 0px 18px;
   transition: all 0.2s ease;
   border: none;
   background: none;
@@ -324,8 +330,8 @@ header div button:hover:after {
   display: block;
   border-radius: 50px;
   background: #3cbaf5;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   transition: all 0.3s ease;
 }
 
@@ -377,7 +383,7 @@ header div button:hover:after {
   color: #ffffff;
   padding: 2.5rem;
   border-radius: 10px;
-  margin: 1.5rem;
+  margin: 10rem;
   box-shadow: 0 0 10px 0 #3cbaf5;
   display: none;
 }
@@ -424,9 +430,10 @@ header div button:hover:after {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 80%;
+  width: 90%;
   font-family: "Josefin Sans", sans-serif;
-  margin-bottom: 2rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   display: none;
 }
 #section-contacto h2 {
@@ -446,12 +453,12 @@ header div button:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 40%;
+  width: 45%;
 }
 #section-contacto .card-contacto .contacto-texto p, #section-contacto .card-contacto .contacto-texto a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.8;
 }
@@ -469,11 +476,11 @@ header div button:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 40%;
+  width: 45%;
 }
 #section-contacto .card-contacto .contacto-form label {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 0.3rem;
 }
@@ -509,14 +516,16 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   width: 100vw;
   background-color: #3cbaf5;
   color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
   animation-name: animacion;
   animation-duration: 5s;
-  padding: 1rem 0;
+  padding: 0.5rem 0.5rem;
+  position: fixed;
+  bottom: 0;
 }
 footer .contenedor-contacto, footer .contenedor-conectados {
   display: flex;
@@ -525,25 +534,306 @@ footer .contenedor-contacto, footer .contenedor-conectados {
   align-items: flex-start;
 }
 footer .contenedor-contacto h4, footer .contenedor-conectados h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
+  font-weight: 600;
 }
 footer .contenedor-contacto a, footer .contenedor-conectados a {
   text-decoration: none;
   color: #ffffff;
 }
 footer .contenedor-contacto a span p, footer .contenedor-conectados a span p {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 footer .contenedor-contacto a span, footer .contenedor-conectados a span {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 0.5rem;
   font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
+@media screen and (max-width: 768px) {
+  header button {
+    padding: 0.8rem;
+  }
+
+  #section-inicio .promos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-inicio .promos .combos, #section-inicio .promos .ofertas {
+    padding: 2rem;
+  }
+  #section-inicio .promos .combos i, #section-inicio .promos .ofertas i {
+    font-size: 4rem;
+  }
+  #section-inicio .promos .combos p, #section-inicio .promos .ofertas p {
+    font-size: 2rem;
+  }
+  #section-inicio .promos .combos {
+    margin-bottom: 1.5rem;
+  }
+
+  #section-paniales,
+#section-juguetes,
+#section-ropa,
+#section-contacto {
+    margin-top: 6rem;
+  }
+
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-img {
+    width: 45%;
+  }
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-texto h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-texto p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-texto-juguete h4 {
+    font-weight: 600;
+  }
+  #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-texto-juguete p {
+    line-height: 1.2;
+  }
+  #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-img-juguete {
+    width: 100%;
+  }
+
+  #section-ropa .card-principal h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta span {
+    font-size: 1.2rem;
+  }
+
+  #section-contacto .card-contacto {
+    margin-top: 2.5rem;
+  }
+  #section-contacto .card-contacto .contacto-texto p, #section-contacto .card-contacto .contacto-texto a {
+    font-size: 1.2rem;
+  }
+  #section-contacto .card-contacto .contacto-form label {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  header button {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+
+  #section-inicio {
+    margin-top: 5rem;
+  }
+  #section-inicio .card-contenedor p {
+    font-size: 0.9rem;
+    width: 65%;
+  }
+  #section-inicio .catalogo-contenedor {
+    margin-top: 2rem;
+  }
+  #section-inicio .promos {
+    padding-top: 5rem;
+  }
+  #section-inicio .promos .combos, #section-inicio .promos .ofertas {
+    padding: 1.5rem;
+  }
+  #section-inicio .promos .combos i, #section-inicio .promos .ofertas i {
+    font-size: 3rem;
+  }
+  #section-inicio .promos .combos p, #section-inicio .promos .ofertas p {
+    font-size: 1.5rem;
+  }
+
+  #section-paniales,
+#section-juguetes,
+#section-ropa,
+#section-contacto {
+    margin-top: 4rem;
+  }
+
+  #section-paniales .botones button {
+    font-size: 0.6rem;
+    padding: 0.4rem;
+    margin: 0.2rem;
+  }
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales {
+    margin: 0.5rem;
+  }
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-img {
+    width: 45%;
+  }
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-texto h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+  }
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-texto p {
+    font-size: 0.6rem;
+    line-height: 1.1;
+    font-weight: 300;
+  }
+
+  #section-juguetes #card-juguetes h2 {
+    font-size: 1rem;
+  }
+  #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete {
+    margin: 0.2rem;
+  }
+  #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-texto-juguete h4 {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+  }
+  #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete .contenedor-texto-juguete p {
+    line-height: 1;
+    font-size: 0.5rem;
+    font-weight: 300;
+  }
+
+  #section-ropa {
+    padding: 0.5rem;
+    margin: 4rem 2rem 0 2rem;
+  }
+  #section-ropa .card-principal h2 {
+    font-size: 1rem;
+  }
+  #section-ropa .card-principal .contenedor-contactos-ropa p {
+    font-size: 0.8rem;
+  }
+  #section-ropa .card-principal .contenedor-contactos-ropa .contenedor-redes-ropa {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  cta:before {
+    width: 25px;
+    height: 25px;
+  }
+
+  .cta span {
+    font-size: 0.8rem;
+  }
+
+  #section-contacto {
+    width: 100%;
+  }
+  #section-contacto h2 {
+    font-size: 1.5rem;
+  }
+  #section-contacto .card-contacto {
+    margin-top: 1.5rem;
+  }
+  #section-contacto .card-contacto .contacto-texto p, #section-contacto .card-contacto .contacto-texto a {
+    font-size: 0.8rem;
+  }
+  #section-contacto .card-contacto .contacto-texto a span p {
+    margin-left: 0.3rem;
+  }
+  #section-contacto .card-contacto .contacto-form label {
+    font-size: 0.8rem;
+  }
+  #section-contacto .card-contacto .contacto-form .enviar {
+    font-size: 0.8rem;
+  }
+
+  footer .contenedor-contacto h4, footer .contenedor-conectados h4 {
+    font-size: 1rem;
+  }
+  footer .contenedor-contacto a span, footer .contenedor-conectados a span {
+    font-size: 0.6rem;
+  }
+  footer .contenedor-contacto a span p, footer .contenedor-conectados a span p {
+    margin-left: 0.4rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-img,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-img {
+    width: 55%;
+  }
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-texto h4,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-texto h4 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-top: 0.3rem;
+  }
+  #section-paniales #card-paniales-pampers .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-huggies .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-babysec .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-estrella .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-duffy .contenedor-paniales .card-paniales .contenedor-texto p,
+#section-paniales #card-paniales-caricias .contenedor-paniales .card-paniales .contenedor-texto p {
+    font-size: 0.5rem;
+  }
+
+  #section-contacto .card-contacto .contacto-texto p, #section-contacto .card-contacto .contacto-texto a {
+    font-size: 0.65rem;
+  }
+  #section-contacto .card-contacto .contacto-form label {
+    font-size: 0.65rem;
+  }
+  #section-contacto .card-contacto .contacto-form .enviar {
+    font-size: 0.65rem;
+  }
+
+  footer .contenedor-contacto h4, footer .contenedor-conectados h4 {
+    font-size: 0.8rem;
+  }
+}
 * {
   margin: 0;
   box-sizing: border-box;
