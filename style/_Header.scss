@@ -5,11 +5,14 @@ body{
 
 header{
     @include flex ($direction:row, $justify:space-around, $align:center);
-    margin-top: $espacioXS;
+    padding: $espacioXS;
     width: 100vw;
-    height: 18vh;
+    // height: 20vh;
+    position: fixed;
+    top: 0;
     animation-name: animacion;
     animation-duration: 5s;
+    background-color: $colorPrincipal;
     .contenedor-logo{
         width: 12%;
         img{
@@ -17,7 +20,7 @@ header{
         }
     }
     button{
-        margin: 1rem;
+        padding: $espacioM;
         font-family: $typography;
         font-size: $sizeM;
         color: $colorSecundario;

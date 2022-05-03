@@ -1,376 +1,314 @@
-// @media screen and (max-width: 2560px) {
-//     // nav button{
-//     //     font-size: $sizeXXL;
-//     // }
-// // inicio
-//     #section-inicio .card-contenedor .card-integrantes{
-//         h1, a{
-//             font-size: $sizeXXL;
-//         }
-//         h4{
-//             font-size: $sizeXL;
-//         }
-//     }
-// // pañales
-//     #section-paniales {
-//         h1{
-//             font-size: $sizeXXL;
-//         }
-//         .botones button img{
-//             width: 7rem;
-//         }
-//         .card-detalle{
-//             margin-top: $espacioM;
-//         }
-//         .card-detalle .detalle {
-//             h4{
-//                 font-size: $sizeXL;
-//             }
-//             p{
-//                 font-size: $sizeL;
-//             }
-//             .talles li{
-//                 font-size: $sizeL;
-//             }
-//         }
-//     }
-// // juguetes
-//     #section-juguetes {
-//         h1{
-//             font-size: $sizeXXL;
-//         }
-//         #card-juguetes{
-//             h2{
-//                 font-size: $sizeXL;
-//             }
-//         }
-//     }
+@media screen and (max-width: 768px){
+    header button {
+        padding: 0.8rem;
+    }
+    #section-inicio .promos{
+        @include flex ($direction:column, $justify:center, $align:center);
+        .combos, .ofertas{
+            padding: $espacioL;
+            i{
+                font-size: 4rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+        .combos{
+            margin-bottom: $espacioM;
+        }
+    }
+    #section-paniales,
+    #section-juguetes,
+    #section-ropa,
+    #section-contacto{
+        margin-top: 6rem;
+    }
+    #section-paniales{
+        #card-paniales-pampers,
+        #card-paniales-huggies,
+        #card-paniales-babysec,
+        #card-paniales-estrella,
+        #card-paniales-duffy,
+        #card-paniales-caricias{
+            .contenedor-paniales{
+                .card-paniales{
+                    .contenedor-img{
+                        width: 45%;
+                    }
+                    .contenedor-texto{
+                        h4{
+                            font-size: 1.2rem;
+                            font-weight:500;
+                        }
+                        p{
+                            font-size: .8rem;
+                            line-height: 1.2;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #section-juguetes {
+        #card-juguetes {
+            .card-detalle-juguetes {
+                .detalle-juguete {
+                    .contenedor-texto-juguete{
+                        h4{
+                            font-weight: 600;
+                        }
+                        p{
+                            line-height: 1.2;
+                        }
+                    }
+                    .contenedor-img-juguete {
+                        width: 100%;
+                    }
+                }
+            }
+        }    
+    }
+    #section-ropa{
+        .card-principal {
+            h2{
+                font-size: $espacioM;
+            }
+        }
+    }
+    .cta span{
+        font-size: 1.2rem;
+    }
+    #section-contacto {
+        .card-contacto {
+            margin-top: 2.5rem;
+            .contacto-texto{
+                p, a{
+                    font-size: 1.2rem;
+                }
+            }
+            .contacto-form{
+                label{
+                    font-size: 1.2rem;
+                }
+            }
+        }
         
-//     #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete {
-//         h4{
-//             font-size: $sizeXL;
-//         }
-//         p{
-//             font-size: $sizeL;
-//         }
-//     }
-// // ropa
-//     #section-ropa .card-principal {
-//         h1{
-//             font-size: $sizeXXL;
-//         }
-//         h4{
-//             font-size: $sizeXL;
-//         }
-//         #card-ropa .card-detalle-ropa .detalle-ropa {
-//             h4{
-//                 font-size: $sizeXL;
-//             }
-//             p{
-//                 font-size: $sizeL;
-//             }
-//         }
-//         .contacto-ropa{
-//             margin-top: $espacioXL;
-//         }
-//     }
-    
-// //envios
-//     #section-envios .card-envios-principal{
-//         h1{
-//             font-size: $sizeXXL;
-//         }
-//         h4, h3{
-//             font-size: $sizeXL;
-//         }
-//         #card-envios .detalle-envios {
-//             h4{
-//                 font-size: $sizeXL;
-//             }
-//             li{
-//                 font-size: $sizeL;
-//             }
-//         }
-//     }
-// //pagos
-//     #section-pagos .card-pagos-principal {
-//         h1{
-//             font-size: $sizeXXL;
-//         }
-//         #card-pagos .detalle-pagos h4{
-//             font-size: $sizeXL;
-//         }
-//     }
-// //footer
-//     footer {
-//         h1{
-//             font-size: $sizeXXL;
-//         }
-//         .redes a:link{
-//             font-size: $sizeXL;
-//         }
-//     }
-// }
+    }
 
-// @media screen and (max-width: 1440px) {
-//     header img {
-//         height: 20vh;
-//     }
-//     footer .div-follow h3, footer .div-visit h3, footer .div-visit a, footer .div-follow a, a{
-//         font-size: 2.3rem;
-//     }
-//     #section-paniales .card-detalle .detalle {
-//         p , .talles li {
-//             font-size: 1.7rem;
-//         }
-//     }
-//     #section-paniales .card-detalle img{
-//         margin-right: $espacioL;
-//     }
-//     #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p{
-//         font-size: 1.7rem;
-//     }
-// }
+}
 
-// @media screen and (max-width: 1024px){
-//     header img {
-//         height: 13vh;
-//     }
-//     // nav button{
-//     //     font-size: $sizeL;
-//     // }
-//     #section-paniales .botones button img{
-//         width: 5rem;
-//     }
-//     #section-paniales .card-detalle .detalle p, #section-paniales .card-detalle .detalle .talles li , 
-//     #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p,
-//     #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p
-//     {
-//         font-size: $sizeM;
-//     }
-//     #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p{
-//         text-align: center;
-//     }
-//     #section-envios .card-envios-principal h4, #section-envios .card-envios-principal h3,
-//     #section-ropa .card-principal h4{
-//         font-size: $sizeL;
-//     }
-//     #section-envios .card-envios-principal #card-envios .detalle-envios li{
-//         font-size: 1.7rem;
-//     }
-// }
+@media screen and (max-width:425px){
+    header button{
+        font-size: .8rem;
+        padding: .2rem;
+    }
+    #section-inicio{
+        margin-top: 5rem;
+        .card-contenedor{
+            p{
+                font-size: .9rem;
+                width: 65%;
+            }   
+        }
+        .catalogo-contenedor{
+            margin-top: 2rem;
+        }
+        .promos{
+            padding-top:5rem;
+            .combos, .ofertas{
+                padding: 1.5rem;
+                i{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
 
-// @media screen and (max-width: 768px){
-//     //header
-//     header img{
-//         width: 30vw;
-//         height: 10vh;
-//     }
+    #section-paniales,
+    #section-juguetes,
+    #section-ropa,
+    #section-contacto{
+        margin-top: 4rem;
+    }
 
-//     nav button, #section-inicio .card-contenedor .card-integrantes h4,
-//     #section-inicio .card-contenedor .card-local h4,
-//     #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete h4{
-//         font-size: $sizeS;
-//     }
-//     #section-inicio .card-contenedor .card-integrantes h1,
-//     #section-inicio .card-contenedor .card-integrantes a, 
-//     #section-inicio .card-contenedor .card-local h1, 
-//     #section-paniales .card-detalle .detalle h4, 
-//     #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa h4,
-//     #section-inicio a
-//     {
-//         font-size: $sizeS;
-//     }
-//     #section-inicio .card-contenedor .card-local h1{
-//         margin-top: $espacioM;
-//     }
-//     #section-inicio{
-//         padding: $espacioM;
-//     }
+    #section-paniales {
+        .botones button{
+            font-size: .6rem;
+            padding: 0.4rem;
+            margin: 0.2rem;
+        }
+        #card-paniales-pampers,
+        #card-paniales-huggies,
+        #card-paniales-babysec,
+        #card-paniales-estrella,
+        #card-paniales-duffy,
+        #card-paniales-caricias{
+            .contenedor-paniales{
+                .card-paniales{
+                    margin: 0.5rem;
+                    .contenedor-img{
+                        width: 45%;
+                    }
+                    .contenedor-texto{
+                        h4{
+                            font-size: 1rem;
+                            font-weight:500;
+                            padding-top: 0.5rem;
+                        }
+                        p{
+                            font-size: .6rem;
+                            line-height: 1.1;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #section-juguetes {
+        #card-juguetes {
+            h2 {
+                font-size: 1rem;
+            }   
+            .card-detalle-juguetes{
+                .detalle-juguete{
+                    margin: .2rem;
+                    .contenedor-texto-juguete{
+                        h4{
+                            font-size: 1rem;
+                            padding-top: 0.5rem;
+                        }
+                        p{
+                            line-height: 1;
+                            font-size: .5rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #section-ropa{
+        padding: .5rem;
+        margin: 4rem 2rem 0 2rem;
+        .card-principal{
+            h2{
+                font-size: 1rem;
+            }
+            .contenedor-contactos-ropa {
+                p{
+                    font-size: .8rem;
 
+                }
+                .contenedor-redes-ropa{
+                    margin-top: 4rem;
+                    margin-bottom:2rem
+                }
+            }
+        }
+    }
+    cta:before{
+        width: 25px;
+        height: 25px;
+    }
+    .cta span {
+        font-size: .8rem;
+    }    
+    #section-contacto {
+        width: 100%;
+        h2 {
+            font-size: 1.5rem;
+        }   
+        .card-contacto {
+            margin-top: 1.5rem;
+            .contacto-texto{
+                p, a{
+                    font-size: .8rem;
+                }
+                a span p{
+                    margin-left: .3rem;
+                }
 
-//     #section-paniales .botones button img{
-//         width: 3rem;
-//     }
-//     #section-paniales h1,
-//     footer h1,
-//     #section-paniales #card-paniales-pampers h2, 
-//     #section-paniales #card-paniales-huggies h2, 
-//     #section-paniales #card-paniales-babysec h2, 
-//     #section-paniales #card-paniales-estrella h2, 
-//     #section-paniales #card-paniales-duffy h2, 
-//     #section-paniales #card-paniales-caricias h2,
-//     #section-juguetes h1,
-//     #section-juguetes #card-juguetes h2,
-//     #section-ropa .card-principal h1,
-//     #section-envios .card-envios-principal h4, 
-//     #section-envios .card-envios-principal h3, 
-//     #section-ropa .card-principal h4,
-//     #section-ropa .card-principal .contacto-ropa a,
-//     #section-envios .card-envios-principal h1,
-//     #section-envios .card-envios-principal h4,
-//     #section-envios .card-envios-principal h3,
-//     #section-envios .card-envios-principal #card-envios .detalle-envios h4,
-//     #section-pagos .card-pagos-principal h1,
-//     #section-pagos .card-pagos-principal #card-pagos .detalle-pagos h4,
-//     footer .redes a:link{
-//         font-size: $sizeM;
+            }
+            .contacto-form{
+                label{
+                    font-size: .8rem;
+                }
+                .enviar{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+    footer {
+        .contenedor-contacto, .contenedor-conectados {
+            h4{
+                font-size: 1rem;
 
-//     }
-//     #section-paniales .card-detalle .detalle p, #section-paniales .card-detalle .detalle p, 
-//     #section-paniales .card-detalle .detalle .talles li, 
-//     #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p, 
-//     #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p,
-//     #section-envios .card-envios-principal #card-envios .detalle-envios li{
-//         font-size: $sizeS;
-//     }
-//     #section-juguetes h1,
-//     #section-juguetes #card-juguetes{
-//         margin: $espacioS;
-//     }
-//     #section-envios .card-envios-principal #card-envios,
-//     #section-envios .card-envios-principal #card-envios .detalle-envios{
-//         padding: 0.5rem;
-//     }
-//     #section-envios{
-//         padding: $espacioS;
+            }
+            a span{
+                font-size: .6rem;
+                p{
+                    margin-left: .4rem;
+                }
+            }
+        }
+    }
+}
 
-//     }
-    
-// }
-
-
-// @media screen and (max-width:425px){
-//     header img{
-//         width: 50vw;
-//         height: 40vh;
-//     }
-//     nav{
-//         display: flex;
-//         flex-wrap: wrap;
-//         padding: 0.2rem;
-//     }
-//     footer .redes a:link{
-//         font-size: 0.7rem;
-//     }
-//     #section-pagos .card-pagos-principal #card-pagos .detalle-pagos h4{
-//         font-size: $sizeS;
-//     }
-//     footer .redes{
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: center;
-//         margin-top: $espacioS;
-//         a{
-//             padding: 0.5rem;
-//         }
-//     }
-//     #section-inicio a,
-//     #section-inicio .card-contenedor .card-integrantes a{
-//         font-size: 0.7rem;
-//     }
-//     #section-paniales .botones{
-//         display: flex;
-//         flex-wrap: wrap;
-//     }
-//     #section-paniales .card-detalle .detalle p, 
-//     #section-paniales .card-detalle .detalle p,
-//     #section-paniales .card-detalle .detalle .talles li,
-//     #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p,
-//     #section-ropa .card-principal h4,
-//     #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa p,
-//     #section-ropa .card-principal .contacto-ropa a,
-//     #section-envios .card-envios-principal #card-envios .detalle-envios li {
-//         font-size: 0.5rem;
-//     }
-
-//     #section-envios .card-envios-principal h4,
-//     #section-envios .card-envios-principal h3,
-//     #section-envios .card-envios-principal #card-envios .detalle-envios h4{
-//         font-size: $sizeS;
-//     }
-   
-//     #section-paniales .card-detalle,
-//     #section-paniales .card-detalle .detalle,
-//     #section-ropa .card-principal #card-ropa .card-detalle-ropa,
-//     #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa h4{
-//         margin: 0.5rem;
-//     }
-    
-//     #section-paniales .card-detalle img{
-//         margin: 0.2rem;
-//     }
-//     #section-paniales #card-paniales-pampers, 
-//     #section-paniales #card-paniales-huggies, 
-//     #section-paniales #card-paniales-babysec, 
-//     #section-paniales #card-paniales-estrella, 
-//     #section-paniales #card-paniales-duffy, 
-//     #section-paniales #card-paniales-caricias,
-//     #section-paniales ul,
-//     #section-juguetes #card-juguetes,
-//     #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p,
-//     #section-ropa .card-principal #card-ropa{
-//         padding: 0.5rem;
-//     }
-    
-//     #section-paniales .card-detalle .detalle .talles{
-//         margin-top: 0.5rem;
-//     }
-//     #section-juguetes #card-juguetes h2{
-//         text-align: center;
-//     }
-//     #section-ropa .card-principal h4{
-//         font-size: 0.7rem;
-//     }
-//     #section-ropa .card-principal #card-ropa .card-detalle-ropa,
-//     #section-envios .card-envios-principal #card-envios,
-//     #section-pagos .card-pagos-principal #card-pagos{
-//         padding: 0.2rem;
-//     }
-//     #section-ropa .card-principal #card-ropa,
-//     #section-pagos .card-pagos-principal #card-pagos
-//     {
-//         margin: 0;
-//         margin-top: 0.5rem;
-//     }
-//     #section-ropa .card-principal #card-ropa .card-detalle-ropa .detalle-ropa,
-//     #section-envios .card-envios-principal #card-envios .detalle-envios,
-//     #section-envios .card-envios-principal #card-envios .detalle-envios h4{
-//         margin:0.2rem;
-//     }
-//     #section-envios .card-envios-principal #card-envios .detalle-envios ul{
-//         padding-left: 0rem;
-//     }
-//     #section-ropa, #section-pagos{
-//         padding: $espacioS;
-//     }
-//     #section-envios .card-envios-principal #card-envios{
-//         margin: 0;
-//         margin-top: $espacioS;
-//     }
-//     #section-pagos .card-pagos-principal #card-pagos .detalle-pagos{
-//         margin: $espacioS;
-//     }
-//     #section-pagos .card-pagos-principal h1{
-//         margin-top: 0;
-//         margin-bottom: 0.5rem;
-//     }
-// }
-
-// @media screen and (max-width:375px){
-//     header img{
-//         height: 35vh;
-//     }
-//     #section-pagos .card-pagos-principal #card-pagos .detalle-pagos{
-//         margin:0.5rem;
-//     }
-// }
+@media screen and (max-width:375px){
+    #section-paniales {
+        #card-paniales-pampers,
+        #card-paniales-huggies,
+        #card-paniales-babysec,
+        #card-paniales-estrella,
+        #card-paniales-duffy,
+        #card-paniales-caricias{
+            .contenedor-paniales{
+                .card-paniales{
+                    .contenedor-img{
+                        width: 55%;
+                    }
+                    .contenedor-texto{
+                        h4{
+                            font-size: .8rem;
+                            font-weight:400;
+                            padding-top: 0.3rem;
+                        }
+                        p{
+                            font-size: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #section-contacto {
+        .card-contacto {
+            .contacto-texto{
+                p, a{
+                    font-size: .65rem;
+                }
+            }
+            .contacto-form{
+                label{
+                    font-size: .65rem;
+                }
+                .enviar{
+                    font-size: .65rem;
+                }
+            }
+        }
+    }
+    footer .contenedor-contacto h4, footer .contenedor-conectados h4 {
+        font-size: .8rem;
+    }
+}
 
 // @media screen and (max-width:320px){
-//     footer h1{
-//         text-align: center;
-//     }
-//     #section-paniales #card-paniales-pampers, #section-paniales #card-paniales-huggies, #section-paniales #card-paniales-babysec, #section-paniales #card-paniales-estrella, #section-paniales #card-paniales-duffy, #section-paniales #card-paniales-caricias, #section-paniales ul, #section-juguetes #card-juguetes, #section-juguetes #card-juguetes .card-detalle-juguetes .detalle-juguete p, #section-ropa .card-principal #card-ropa{
-//         padding: 0.1rem;
-//     }
+    
 // }

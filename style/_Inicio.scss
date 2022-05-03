@@ -2,24 +2,27 @@
     @include flex ($direction:column, $justify:center, $align:center);
     font-family: $typography;
     color: $colorSecundario;
-    font-size: $sizeL;
+    font-size: $sizeXL;
     border-radius: $borderRadius;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: $espacioInicio;
     animation-name: animacion;
     animation-duration: 7s;
     .card-contenedor{
         @include flex ($direction:column, $justify:center, $align:center);
+        h1{
+            font-size: $sizeL;
+            padding-bottom: 3rem;
+        }
         p{
-            font-size: 1.2rem;
+            font-size: $sizeS;
             width: 45%;
             text-align: center;
-            margin-top: $espacioM;
             font-weight: 300;
             line-height: 1;
         }
     }
     .catalogo-contenedor {
+        overflow: hidden;
         margin-top: 6rem;
         a{
             text-decoration: none;
@@ -28,16 +31,19 @@
     .promos{
         @include flex ($direction:row, $justify:space-around, $align:center);
         width: 80%;
-        margin-top: $espacioInicio;
+        padding: $espacioInicio 0 $espacioInicio 0;
         .combos, .ofertas{
             @include flex ($direction:column, $justify:center, $align:center);
             border: 1px solid $colorSecundario;
             border-radius: 10%;
-            padding: $espacioXXXXL;
+            padding: $espacioXXXL;
             cursor: pointer;
             i{
-                margin-bottom: 4rem;
-                font-size: 8rem;
+                margin-bottom: 3rem;
+                font-size: 6rem;
+            }
+            p{
+                font-size: $sizeXL;
             }
         }
         .combos:hover, .ofertas:hover{
@@ -61,7 +67,7 @@
 .cta {
     position: relative;
     margin: auto;
-    padding: 12px 18px;
+    padding: 0px 18px;
     transition: all 0.2s ease;
     border: none;
     background: none;
@@ -75,8 +81,8 @@ content: "";
     display: block;
     border-radius: 50px;
     background: $colorTerciario;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     transition: all 0.3s ease;
 }
 

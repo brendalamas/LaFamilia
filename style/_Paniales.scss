@@ -1,7 +1,7 @@
 #section-paniales{
     @include flex ($direction:column, $justify:center, $align:center);
     font-family: $typography;
-    margin-top: $espacioL;
+    margin-top: $espacioInicio;
     .botones{
         @include flex ($direction:column, $justify:center, $align:center);
         flex-wrap: wrap;
@@ -10,12 +10,11 @@
             background-color: $colorSecundario;
             color: $colorPrincipal;
             border: none;
-            padding: $espacioS $espacioXS;
+            padding: $espacioS;
             margin: $espacioXS;
             font-size: $sizeS;
             font-weight: bold;
             border-radius: $borderRadius;
-            width: 8rem;
             cursor: pointer;
         }
         button:hover{
@@ -31,10 +30,12 @@
     #card-paniales-caricias{
         @include flex ($direction:column, $justify:center, $align:center);
         color:$colorSecundario;
-        margin: $espacioXXL;
+        // margin: $espacioXXL;
         .contenedor-paniales{
             @include flex ($direction:row, $justify:center, $align:center);
             flex-wrap: wrap;
+            margin-top: 2rem;
+
             .card-paniales{
                 @include flex ($direction:column, $justify:center, $align:center);
                 border-radius: $borderRadius;
